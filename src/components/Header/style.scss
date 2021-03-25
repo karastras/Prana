@@ -49,6 +49,10 @@
         margin: 1rem 0;
     }
 
+    &-button{
+        display: none;
+    }
+
     &-nav{
         margin: 1rem 0;
         padding-bottom: 2px;        
@@ -102,13 +106,30 @@
         }
 
         &-content{
-            display: flex;
-            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            margin: 0 1rem 0 0;
         }
+
         &-slogan{
-            padding: 0 1rem;
             width: 100%;
-            font-size: 1.8rem;
+            font-size: 1.4rem;
+        }
+
+        &-button{
+            display: block;
+            color: white;
+            background-color: #83992b;        
+            border-radius: 10px;
+            padding: 0rem 1rem 0.1rem 1rem;
+            font-weight: bold;
+            font-size: 1rem;
+            text-shadow: black 0.1em 0.1em 0.2em;
+            box-shadow: black 0.1em 0.1em 0.2em;
+        }
+
+        &-nav{
+            display: none;
         }
     }
 }

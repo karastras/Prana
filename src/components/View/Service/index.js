@@ -14,11 +14,11 @@ const Service = ({data}) => {
             <Helmet>
                 <title>Prana | Prestations</title>
             </Helmet>
-            <div className='service-title'>
-                <h2>
+            <h2 className='service-title'>
+                
                     Retrouvez tous nos soins pour femmes et hommes               
-                </h2>
-            </div>
+                
+            </h2>
             <div className='service-content'>
                 {
                     data.map((cardObject)=>(                        

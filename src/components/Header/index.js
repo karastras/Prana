@@ -20,8 +20,9 @@ const Header = () => {
             </Link>
             <div className="header-content">
                 <h2 className="header-slogan">
-                 Institut de Beauté Biologique 🌷
+                    Institut de Beauté Biologique 🌷
                 </h2>
+                <button className="header-button">Menu</ button >
                 <div className="header-nav">
                     <Nav />
                 </div>

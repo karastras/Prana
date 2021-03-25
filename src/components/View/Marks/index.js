@@ -14,11 +14,11 @@ const Marks = ({data}) => {
         <Helmet>
             <title>Prana | Nos marques</title>
         </Helmet>
-          <div className='marks-title'>
-                <h2>
+          <h2 className='marks-title'>
+                
                     Retrouvez toutes nos marques utilisées en institut               
-                </h2>
-            </div>
+               
+            </h2>
             <div className='marks-content'>
                 
                     { 
