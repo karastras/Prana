@@ -1,0 +1,10 @@
+.findUs{
+    display: flex;
+    justify-content: center;
+    
+    &-img{
+        width: 70%;
+        border-radius: 1%;
+        box-shadow: black 1em 1em 1em;
+    }
+}

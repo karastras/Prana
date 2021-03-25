@@ -1,0 +1,82 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+
+    &-text{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        color: black;
+        font-weight: bold;
+        
+        margin: 1rem;
+    }
+    &-adress{
+        padding: 0px 3px;
+        font-family: 'Truculenta', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    //BUTTON FIND-US
+
+    &-link{
+        margin: 0rem 0rem 1rem 2rem;
+        color: white;
+        background-color: #83992b;        
+        border-radius: 10px;
+        padding: 0rem 1rem 0.3rem 1rem;
+        font-weight: bold;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        box-shadow: black 0.1em 0.1em 0.2em;
+        transition: color 0.8s, background-color 0.5s;        
+        &:hover {
+            color: #C9EA44;
+            background-color: #617023;
+            text-decoration: none;            
+        }        
+    }
+
+    //CAROUSEL
+
+    &-content{
+        display: flex;
+        justify-content: center;
+
+    }
+    &-carousel{        
+        box-shadow: black 0em 0em 1em;
+        border-radius: 5px;
+        width: 70%;        
+    }
+    
+    &-img{
+        object-fit: cover; 
+        height: 35rem;
+        border-radius: 5px;
+    }
+}
+
+// CAROUSEL BUTTONS
+
+.carousel-indicators li {
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #96ce3d;
+    border-radius: 50%;    
+  }
+.carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2396ce3d' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    padding: 1.5em;
+}
+.carousel-control-next-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2396ce3d' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    padding: 1.5em
+}

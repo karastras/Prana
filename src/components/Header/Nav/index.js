@@ -4,28 +4,26 @@ import './style.scss';
 
 const Nav = () => {
     return(
-        <div className="navigation">
-            <div className="navigation-NavLinks">
-                <NavLink exact className="navigation-NavLink" to="/home">
-                    Acceuil
+        <div >
+                <NavLink exact className="navLink" to="/">
+                    Accueil
                 </NavLink>
-                <NavLink exact className="navigation-NavLink" to="/service">
+                <NavLink exact className="navLink" to="/service">
                     Prestations
                 </NavLink>
-                <NavLink exact className="navigation-NavLink" to="/philosophy">
+                <NavLink exact className="navLink" to="/philosophy">
                     Philosophie
                 </NavLink>
-                <NavLink exact className="navigation-NavLink" to="/offers">
+                <NavLink exact className="navLink" to="/offers">
                     Offres
                 </NavLink>
-                <NavLink exact className="navigation-NavLink" to="/marks">
+                <NavLink exact className="navLink" to="/marks">
                     Nos marques
                 </NavLink>
-                <NavLink exact className="navigation-NavLink" to="/gallery">
-                    Gallerie
+                <NavLink exact className="navLink" to="/find-us">
+                    Nous trouver
                 </NavLink>
                 
-            </div>
         </div>
         
     );
