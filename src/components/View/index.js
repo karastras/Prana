@@ -9,11 +9,12 @@ import Gallery from './Galley';
 import AboutUs from './FooterView/AboutUs';
 import Contact from './FooterView/Contact';
 import LegalNotice from './FooterView/LegalNotice';
+import './style.scss';
 
 const View = () => {
     return (
-        <div>
-            <Route path="/home">
+        <div className="view">
+            <Route exact path="/">
                 <Welcome />
             </Route>
             <Route path="/service">
