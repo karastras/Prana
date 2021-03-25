@@ -1,0 +1,14 @@
+.navigation{
+
+    &-NavLinks{
+        margin-right: 3em;
+    }
+    
+    &-NavLink{
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        font-weight: bold;
+        text-shadow: black 0.1em 0.1em 0.2em
+    }
+}

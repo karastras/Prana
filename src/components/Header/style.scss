@@ -1,0 +1,48 @@
+.header{
+     padding: 20px;
+     margin: auto; 
+     display: flex;
+     flex-direction: column;
+    
+    &-titles{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+    &-title{
+        color: #4F412F; 
+        padding-right: 20px;
+        font-size: 4em;
+        text-transform: uppercase;
+        font-family: 'Fredericka the Great', cursive;
+        font-weight: bold;
+    }
+
+    &-title2{
+        font-size: 2em;
+        padding-bottom: 4px;
+        font-family: 'Anton', sans-serif;
+        color: #434E16     
+    }
+
+    &-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 20px 0px;
+    }
+
+    &-slogan{
+        color: #4F412F; 
+        font-weight: bold;
+        font-size: 1.5rem;
+        font-family: 'Anton', sans-serif;
+        margin-left: 3em;
+        text-shadow: white 0.1em 0.1em 0.2em
+
+    }
+    &-nav{
+        padding-bottom: 2px;
+    }
+}

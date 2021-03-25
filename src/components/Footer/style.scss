@@ -1,0 +1,22 @@
+.footer{
+        height: 4rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+    &-list{
+        display: flex;
+        margin-right: 3em;
+    }
+
+    &-content{
+        padding: 20px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        text-shadow: black 0.1em 0.1em 0.2em
+    }
+}
