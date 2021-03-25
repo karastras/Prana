@@ -15,7 +15,15 @@ const View = () => {
     return (
         <div className="view">
             <Route exact path="/">
+<<<<<<< HEAD
                 <Home />
+=======
+<<<<<<< HEAD
+                <Home />
+=======
+                <Welcome />
+>>>>>>> 06588bbdbc966eea892368e4072a729a26c235e9
+>>>>>>> d3c987d3e64c67dde0e1ef1b4d6090f3ccbe8eaf
             </Route>
             <Route path="/service">
                 <Service />

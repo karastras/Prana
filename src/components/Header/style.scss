@@ -32,12 +32,21 @@
     }
 
     &-slogan{
+<<<<<<< HEAD
         color: #4F412F;
         font-size: 1.8rem;
         font-family: 'Truculenta', sans-serif;
         text-shadow: white 0.1em 0.1em 0.2em;
         width: 40%;
         margin: 0;
+=======
+        color: #4F412F; 
+        font-weight: bold;
+        font-size: 1.5rem;
+        font-family: 'Anton', sans-serif;
+        text-shadow: white 0.1em 0.1em 0.2em;
+        width: 40%;
+>>>>>>> d3c987d3e64c67dde0e1ef1b4d6090f3ccbe8eaf
 
     }
     &-nav{

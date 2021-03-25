@@ -31,7 +31,11 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;	
+<<<<<<< HEAD
 	background: url(./assets/backgroundApp/wood-2065369_1920.jpg) ;
+=======
+	background: url(./assets/backgroundApp/wood-2065369_1920.jpg) no-repeat;
+>>>>>>> d3c987d3e64c67dde0e1ef1b4d6090f3ccbe8eaf
 }
 ol, ul {
 	list-style: none;

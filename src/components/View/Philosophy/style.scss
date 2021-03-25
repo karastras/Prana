@@ -2,6 +2,10 @@
     margin: 1.5em auto;
     width: 80%;
     padding: 1em;
+<<<<<<< HEAD
+=======
+    background-color: rgb(246, 231, 207);
+>>>>>>> d3c987d3e64c67dde0e1ef1b4d6090f3ccbe8eaf
     border-radius: 1%;
     
     &-end{
@@ -26,6 +30,7 @@
         
     }
     
+<<<<<<< HEAD
     &-content{
         font-size: 1.5rem;
         font-family: 'Architects Daughter', cursive;
@@ -34,3 +39,14 @@
         margin: 1em;
     }
 }
+=======
+}
+
+p{
+    font-size: 1.5rem;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;
+    text-align: center;
+    margin: 1em;
+}
+>>>>>>> d3c987d3e64c67dde0e1ef1b4d6090f3ccbe8eaf
