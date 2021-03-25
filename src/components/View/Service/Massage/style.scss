@@ -1,0 +1,54 @@
+.massage{
+    display: flex;
+    flex-direction: column; 
+
+    &-img{
+      width: 20rem; 
+      border-radius: 10px; 
+      box-shadow: black 0.2rem 0.2rem 0.2rem;
+    }
+    &-pregnant, &-stone, &-deep{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+    &-content{
+        width: 65%;
+        margin: 0rem 1rem 1rem 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    &-title{
+        font-size: 1.7rem;
+        margin-top: 1rem;
+    }
+    &-title, &-text{
+        font-family: 'Truculenta', sans-serif;
+    }
+}
+
+@media(max-width:480px){
+    .massage{
+        width: 100%;
+
+            &-img{
+                width: 90%;
+                height: 200px;
+            }
+            &-content{
+                width: 95%;
+                margin: 0 0 2rem 0;
+            }           
+        }
+}
+
+@media(min-width:2100px){
+    .massage{
+        justify-content: center;
+        &-img{
+            width: 30rem;
+        }
+    }
+}

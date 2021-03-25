@@ -1,0 +1,112 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.home{ 
+    
+    width: 100%;
+    
+    
+    &-text{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        color: black;
+        font-weight: bold;
+        
+        margin-bottom: 1rem;
+    }
+    &-adress{
+        padding: 0px 3px;
+        font-family: 'Truculenta', sans-serif;
+        font-size: 1.8rem;
+    }
+
+    //BUTTON FIND-US
+
+    &-link{
+        margin: 0rem 0rem 1rem 2rem;
+        color: white;
+        background-color: #83992b;        
+        border-radius: 10px;
+        padding: 0rem 1rem 0.1rem 1rem;
+        font-weight: bold;
+        font-size: 1.4rem;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        box-shadow: black 0.1em 0.1em 0.2em;
+        transition: color 0.8s, background-color 0.5s;        
+        &:hover {
+            color: #C9EA44;
+            background-color: #617023;
+            text-decoration: none;            
+        }        
+    }
+
+    //CAROUSEL
+
+    &-content{
+        display: flex;
+        justify-content: center;
+
+    }
+    &-carousel{        
+        box-shadow: black 0em 0em 1em;
+        border-radius: 5px;
+        width: 70%;        
+    }
+    
+    &-img{
+        object-fit: cover; 
+        height: 35rem;
+        border-radius: 5px;
+    }
+}
+
+// CAROUSEL BUTTONS
+
+.carousel-indicators li {
+    width: 1em;
+    height: 1em;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #96ce3d;
+    border-radius: 50%;    
+  }
+.carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2396ce3d' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    padding: 1.5em;
+}
+.carousel-control-next-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2396ce3d' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    padding: 1.5em
+}
+
+@media(max-width:480px){
+    .home{
+        
+
+        &-carousel{
+            width: 100%;
+            margin-bottom: 2rem;
+            
+        }
+        &-img{
+            height: 20rem
+        }
+    }
+    .carousel-indicators li{
+        display: none;
+    }
+}
+
+@media(min-width:2100px){
+    .home{
+        &-carousel{
+            width: 80%;}
+        
+        &-img{
+            height: 55rem
+        }
+    }
+    
+}

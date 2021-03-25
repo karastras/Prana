@@ -1,0 +1,100 @@
+.service{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    
+    &-content{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    &-link{
+        &:hover{
+        text-decoration: none;
+        }
+    }
+    &-body{
+        background-color: #FADEB1;
+    }
+
+    &-card{
+        width: 20rem;
+        height: 27rem;
+        box-shadow: black 0.5em 0.5em 0.5em;
+        margin: 1.5rem 1rem;
+        
+    }
+    &-img{
+        width: 250px;
+        height: 240px;
+        
+    }
+    &-body{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }    
+    &-title, &-titles, &-text{
+        color: black;
+        font-family: 'Truculenta', sans-serif;
+
+    }
+
+    &-button{
+        position: absolute;
+        top: 145px;
+        left: 20px;
+        color: white;
+        background-color: #83992b;
+        border: none;       
+        border-radius: 10px;
+        padding: 0rem 1rem 0.2rem 1rem;
+        font-weight: bold;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        box-shadow: black 0.1em 0.1em 0.2em;
+        transition: color 0.8s, background-color 0.5s;        
+        &:hover {
+            color: #C9EA44;
+            background-color: #617023;          
+        }        
+    }
+}
+
+@media(max-width:480px){
+    .service{        
+        margin: 0;
+
+        &-title{
+            text-align: center;
+        }
+        &-content{
+            margin:0;
+        }
+        &-img{
+            
+            height: 120px;
+
+        }
+        &-card{
+            width: 11rem;
+            height: 19rem;
+            margin: 0.5rem;
+
+        }
+        &-button{
+            display: none;
+        }
+        &-body{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+}

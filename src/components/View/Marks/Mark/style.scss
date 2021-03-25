@@ -1,0 +1,23 @@
+.label{
+    
+    width: 90%;
+    margin: 2rem auto;
+    text-align: center;
+    font-family: 'Truculenta', sans-serif;
+    &-titlepage{
+        font-size: 3rem;
+    }
+    &-content{
+        margin-bottom: 2rem;
+    }
+    &-title{
+        font-size: 2rem;
+        margin: 1rem;
+    }
+    &-text{
+        font-size: 1.2rem;
+    }
+    &-link{
+        font-size: 1.4rem;
+    }
+}

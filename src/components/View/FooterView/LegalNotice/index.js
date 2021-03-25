@@ -1,8 +1,15 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
+
 
 const LegalNotice = () => {
     return(
-        <div>je suis les mentions légales</div>
+        <div>
+            <Helmet>
+                <title>Prana | Mentions légales</title>
+            </Helmet>
+            je suis les mentions légales
+            </div>
     );
 };
 

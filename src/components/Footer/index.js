@@ -8,11 +8,6 @@ const Footer = () => {
         <div className="footer">
             <ul className='footer-list'>
                 <li>
-                    <NavLink to="/about-us" className='footer-content'>
-                        Qui sommes-nous?
-                    </NavLink>
-                </li>
-                <li>
                     <NavLink to="/contact-us" className='footer-content'>
                         Contactez nous
                     </NavLink>
@@ -20,6 +15,11 @@ const Footer = () => {
                 <li>
                     <NavLink to="/legal-notice" className='footer-content'>
                         Mentions légales
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/sitemap" className='footer-content'>
+                        Plan du site
                     </NavLink>
                 </li>
             </ul>
