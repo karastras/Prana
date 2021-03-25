@@ -15,10 +15,6 @@ import './style.scss';
 const Home = () => {
     return (
         <div className='home'>
-<<<<<<< HEAD
-=======
-
->>>>>>> a59d359e6b5a75289b83602e90ecb1d58845e314
             <div className='home-text'>
                 <p className="home-adress">Nous vous accueillons au: </p>
                 <p className="home-adress">4, rue de la Poterne</p>
@@ -28,11 +24,7 @@ const Home = () => {
             </Link>
             </div>
             <div className='home-content'>
-<<<<<<< HEAD
                 <Carousel className='home-carousel' interval={null}>                    
-=======
-                <Carousel className='home-carousel' interval={null}>
->>>>>>> a59d359e6b5a75289b83602e90ecb1d58845e314
                     <Carousel.Item>
                         <img
                         className="home-img d-block w-100"
