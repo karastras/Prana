@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet';
 
 import './style.scss';
 
+import './style.scss';
+
 const Philosophy = () => {
     return (
         <div className='philosophy'>
