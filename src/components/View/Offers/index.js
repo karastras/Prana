@@ -17,9 +17,7 @@ const Offers = () => {
                             Coffret de noël 
                         </h4>
                         <span className='offers-text'>
-                            une huile essentielle 100ml <br />
-                            une bougie parfumée  <br />
-                            une crème  <br />
+                            une huile essentielle 100ml
                         </span>
                     </div>
                 </div>
@@ -30,9 +28,7 @@ const Offers = () => {
                             Coffret de la Saint-Valentin 
                         </h4>
                         <span className='offers-text'>
-                            une huile essentielle 100ml <br />
-                            une bougie parfumée <br />
-                            une crème  <br />
+                            une huile essentielle 100ml
                         </span>
                     </div>
                 </div>
@@ -43,9 +39,7 @@ const Offers = () => {
                             Coffret Energie
                         </h4>
                         <span className='offers-text'>
-                            une huile essentielle 100ml <br />
-                            une bougie parfumée  <br />
-                            une crème  <br />
+                            une huile essentielle 100ml 
                         </span>
                     </div>
                 </div>
@@ -56,9 +50,7 @@ const Offers = () => {
                             Coffret Détente 
                         </h4>
                         <span className='offers-text'>
-                            une huile essentielle 100ml <br />
-                            une bougie parfumée  <br />
-                            une crème  <br />
+                            une huile essentielle 100ml 
                         </span>
                     </div>
                 </div>
