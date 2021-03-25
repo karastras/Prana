@@ -1,4 +1,5 @@
 .service{
+<<<<<<< HEAD
     width: 100%;
     margin: 1rem auto;
     display: flex;
@@ -12,6 +13,15 @@
         justify-content: space-around;
         margin: auto;
     }
+=======
+    width: 80%;
+    height: auto;
+    margin: 2em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+>>>>>>> a59d359e6b5a75289b83602e90ecb1d58845e314
     &-link{
         &:hover{
         text-decoration: none;
@@ -22,8 +32,12 @@
         width: 20rem;
         height: 27rem;
         box-shadow: black 0.5em 0.5em 0.5em;
+<<<<<<< HEAD
         margin: 1.5rem 1rem;
         
+=======
+        margin: 1em 0em;
+>>>>>>> a59d359e6b5a75289b83602e90ecb1d58845e314
     }
     &-img{
         width: 250px;
@@ -36,8 +50,11 @@
     }    
     &-title, &-text{
         color: black;
+<<<<<<< HEAD
         font-family: 'Truculenta', sans-serif;
 
+=======
+>>>>>>> a59d359e6b5a75289b83602e90ecb1d58845e314
     }
 
     &-button{
