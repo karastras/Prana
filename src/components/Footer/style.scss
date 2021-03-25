@@ -1,22 +1,40 @@
 .footer{
-        height: 4rem;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
+    display: flex;
+    justify-content: flex-end;
+        
+        
 
     &-list{
         display: flex;
-        margin-right: 3em;
+        margin-right: 3rem;
+       
     }
 
     &-content{
-        padding: 20px;
+        padding-left: 20px;
+        font-size: 0.8vw;
         color: white;
         text-decoration: none;
         font-weight: bold;
-        text-shadow: black 0.1em 0.1em 0.2em
+        text-shadow: black 0.1em 0.1em 0.2em;
+        transition: color 0.5s;
+        &:hover {
+            color: #C9EA44;
+            text-decoration: none;
+        }
+        
     }
+.active{
+    color: #C9EA44;
+}
+}
+
+
+@media(max-width:480px){
+    .footer{
+       &-content{
+           font-size: 0.7rem;
+       }
+    }
+
 }

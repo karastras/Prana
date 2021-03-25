@@ -22,6 +22,11 @@ const Footer = () => {
                         Mentions légales
                     </NavLink>
                 </li>
+                <li>
+                    <NavLink to="/sitemap" className='footer-content'>
+                        Plan du site
+                    </NavLink>
+                </li>
             </ul>
         </div>
     );

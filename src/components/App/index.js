@@ -8,9 +8,11 @@ import './style.scss';
 const App = () => {
 return (
     <div className="app">
-        <Header />
-        <View />
-        <Footer />
+        <div className="app-main">
+            <Header />
+            <View />
+            <Footer />
+        </div>
     </div>
 );
 };

@@ -1,0 +1,10 @@
+.prices{
+    width: 100%;
+    &-label{
+       text-align: left;
+    }
+    
+    &-price{
+        text-align: right;
+    }
+}

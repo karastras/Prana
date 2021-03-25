@@ -1,0 +1,75 @@
+.philosophy{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1%;
+    
+    &-end{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 3em 1em 0em 1em;
+    }
+    &-text{
+        font-weight: bold;
+        font-family: 'Architects Daughter', cursive;
+        font-size: 1.5rem;
+
+
+    }
+    &-author{
+        font-weight: bold;
+        font-size: 4rem;
+        font-family: 'Satisfy', cursive;
+        margin-top: 0.3em;
+        margin-right: 0.5em;
+        
+    }
+    
+    &-content{
+        font-size: 1.5rem;
+        font-family: 'Architects Daughter', cursive;
+        font-weight: bold;
+        text-align: center;
+        margin: 1em;
+    }
+}
+
+@media(max-width:480px){
+    .philosophy{
+        width: 100%;
+        margin: 0 1rem;
+        padding: 0;
+
+        &-end{
+            text-align: center;
+            margin: 1rem 0;
+        }
+        &-content{
+            margin:1rem 0;            
+        }
+    }
+
+
+}
+@media(min-width:2100px){
+    .philosophy{
+        width: 80%;
+        margin: auto;
+        padding: 0;
+
+        &-content{
+            font-size: 2rem;
+        
+        }
+        &-text{
+            font-size: 2.5rem;
+        }
+        &-author{
+            font-size: 5rem;
+        }
+    }
+
+
+}
+

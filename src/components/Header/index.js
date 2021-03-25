@@ -16,7 +16,7 @@ const Header = () => {
             </div>
             <div className="header-content">
                 <h2 className="header-slogan">
-                    Institut de Beauté Biologique
+                 Institut de Beauté Biologique 🌷
                 </h2>
                 <div className="header-nav">
                     <Nav />
