@@ -15,6 +15,7 @@ import './style.scss';
 const Home = () => {
     return (
         <div className='home'>
+
             <div className='home-text'>
                 <p className="home-adress">Nous vous accueillons au: </p>
                 <p className="home-adress">4, rue de la Poterne</p>
@@ -24,7 +25,7 @@ const Home = () => {
             </Link>
             </div>
             <div className='home-content'>
-                <Carousel className='home-carousel' interval={null}>                    
+                <Carousel className='home-carousel' interval={null}>
                     <Carousel.Item>
                         <img
                         className="home-img d-block w-100"
