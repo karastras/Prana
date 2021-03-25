@@ -1,14 +1,15 @@
-.navigation{
-
-    &-NavLinks{
-        margin-right: 3em;
-    }
-    
-    &-NavLink{
-        text-decoration: none;
+.navLink{
         color: white;
-        padding: 20px;
+        padding: 10px;
         font-weight: bold;
-        text-shadow: black 0.1em 0.1em 0.2em
+        text-shadow: black 0.1em 0.1em 0.2em;
+        transition: color 0.5s;
+        
+        &:hover {
+            color: #C9EA44;
+            text-decoration: none;            
+        }     
     }
+.active{
+    color: #C9EA44;
 }

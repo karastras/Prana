@@ -1,0 +1,12 @@
+.fred{
+    color: red;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+
+   
+    &-petitcoeur{
+        display: flex;
+        align-self: center;
+    }
+}
