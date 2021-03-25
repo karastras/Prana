@@ -1,6 +1,9 @@
 .app{
-    min-height: 100vh;
-    background-color: burlywood;
-    margin: 0px 200px;
+    height: 100vh;
+    background-color: rgba($color: burlywood, $alpha: 0.9);
+    margin: 0% 10%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
     position: relative;
 }

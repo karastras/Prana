@@ -1,0 +1,26 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-text{
+        color: red;
+        margin: 3em auto;
+    }
+    &-content{
+        display: flex;
+        justify-content: center;
+
+    }
+    &-carousel{        
+        width: 50%;
+        box-shadow: black 0em 0em 1em;
+        
+    }
+    
+    &-img{
+        object-fit: cover; 
+    }
+}
