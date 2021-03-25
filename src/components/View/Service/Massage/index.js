@@ -1,11 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import pregnant01 from '../../../../assets/service/massage/pregnant01.jpg';
-import massage03 from '../../../../assets/service/massage/massage03.jpg';
-import massage04 from '../../../../assets/service/massage/massage04.jpg';
-
-
 import './style.scss';
 
 const Massage = () => {
@@ -15,7 +10,7 @@ const Massage = () => {
                 <title>Prana | Massage</title>
             </Helmet>
             <div className='massage-pregnant'>
-                <img className='massage-img' src={pregnant01} alt='' />
+                <img className='massage-img' src="https://nsm09.casimages.com/img/2021/03/18//21031810380817254117321785.jpg" alt='' />
                 <div className='massage-content'>
                     <h4 className='massage-title'>
                         Le massage Femme Enceinte
@@ -29,7 +24,7 @@ const Massage = () => {
                 </div>
             </div>
             <div className='massage-stone'>
-                <img className='massage-img' src={massage03} alt='' />
+                <img className='massage-img' src="https://nsm09.casimages.com/img/2021/03/18//21031810380817254117321786.jpg" alt='' />
                 <div className='massage-content'>
                     <h4 className='massage-title'>
                         Le massage aux pierres chaudes
@@ -44,7 +39,7 @@ const Massage = () => {
                 </div>
             </div>
             <div className='massage-deep'>
-                <img className='massage-img' src={massage04} alt='' />
+                <img className='massage-img' src="https://nsm09.casimages.com/img/2021/03/18//21031810380917254117321787.jpg" alt='' />
                 <div className='massage-content'>
                     <h4 className='massage-title'>
                         Le massage sportif "Deep Tissue"

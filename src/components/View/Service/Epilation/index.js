@@ -6,9 +6,6 @@ import Prices from '../Prices';
 import listWo from '../../../../data/epilationPriceWo';
 import listMen from '../../../../data/epilationPriceMen';
 
-import epilationW from '../../../../assets/service/price/epilationW.jpg';
-import epilationM from '../../../../assets/service/price/epilationM.jpg';
-
 import './style.scss';
 
 
@@ -25,7 +22,7 @@ const Epilation = () => {
                 <title>Prana | Epilation</title>
             </Helmet>
             <div className='epilation-woman'>
-                <img className='epilation-img'src={epilationW} alt="" />
+                <img className='epilation-img'src="https://nsm09.casimages.com/img/2021/03/18//21031810381017254117321791.jpg" alt="" />
                 <div className='epilation-link'>
                     <a href="#price-women">
                         <button className='epilation-button' type='button' onClick={() => {
@@ -57,7 +54,7 @@ const Epilation = () => {
             </div>
 
             <div className='epilation-man'>
-                <img className='epilation-img'src={epilationM} alt="" />
+                <img className='epilation-img'src="https://nsm09.casimages.com/img/2021/03/18//21031810381017254117321790.jpg" alt="" />
                 <div className='epilation-link'>
                 <a href="#price-men">
                     <button className='epilation-button' type='button' onClick={() => {

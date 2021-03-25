@@ -7,6 +7,7 @@ import Home from './Home';
 import Philosophy from './Philosophy';
 import Offers from './Offers';
 import Marks from './Marks';
+import FindUs from './FindUs';
 
 /* import from Service component */
 import Epilation from './Service/Epilation';
@@ -17,12 +18,7 @@ import Massage from './Service/Massage';
 /* import from Marks component */
 import Mark from './Marks/Mark';
 
-
-
-
 /* import for Footer */
-import FindUs from './FindUs';
-import Contact from './FooterView/Contact';
 import LegalNotice from './FooterView/LegalNotice';
 import Sitemap from './FooterView/Sitemap';
 
@@ -60,18 +56,15 @@ const View = () => {
 
                     {/* View from Marks component */}
                     {
-                      dataMark.map((markObject)=>(
+                        dataMark.map((markObject)=>(
 
                           <Route key={markObject.id} exact path={markObject.path} render={() => (
                               <Mark {...markObject} />
                               )}/>
                         ))
-                      }
-                    
-                    
+                    }
 
                     {/* View from Footer component */}
-                    <Route exact path='/contact-us' component={Contact} />
                     <Route exact path='/legal-notice' component={LegalNotice} />
                     <Route exact path='/sitemap' component={Sitemap} />
 

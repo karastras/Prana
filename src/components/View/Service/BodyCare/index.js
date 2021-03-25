@@ -3,8 +3,6 @@ import {Helmet} from 'react-helmet';
 
 import Prices from '../Prices';
 import list from '../../../../data/bodyCarePrice';
-import bodyCare01 from '../../../../assets/service/price/bodyCare01.jpg';
-
 
 import './style.scss';
 
@@ -17,7 +15,7 @@ const BodyCare = () => {
             <Helmet>
                 <title>Prana | Soin du corps</title>
             </Helmet>          
-            <img className='bodyCare-img'src={bodyCare01} alt="" />
+            <img className='bodyCare-img'src="https://nsm09.casimages.com/img/2021/03/18//21031810380917254117321789.jpg" alt="" />
             <div className='bodyCare-link'>
                 <a href="#price-body">
                     <button className='bodyCare-button' type='button' onClick={() => {

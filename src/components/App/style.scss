@@ -1,16 +1,14 @@
 .app{
-    background: url(../../assets/backgroundApp/imageApp01.jpg);
-    height: auto;
+    background: url(https://nsm09.casimages.com/img/2021/03/25//21032510374517254117333870.jpg);
     
-
-        &-main{
-            min-height: 100vh;
-            background-color: rgba($color: burlywood, $alpha: 0.9);
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            margin: 0 10%;
-        }
+    &-main{
+        min-height: 100vh;
+        background-color: rgba($color: burlywood, $alpha: 0.9);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        margin: 0 10%;
+    }
 }
 
 @media(max-width:480px){

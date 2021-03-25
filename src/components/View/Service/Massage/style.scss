@@ -3,9 +3,9 @@
     flex-direction: column; 
 
     &-img{
-      width: 20rem; 
-      border-radius: 10px; 
-      box-shadow: black 0.2rem 0.2rem 0.2rem;
+        width: 17rem; 
+        border-radius: 10px; 
+        box-shadow: black 0.2rem 0.2rem 0.2rem;
     }
     &-pregnant, &-stone, &-deep{
         display: flex;
@@ -18,7 +18,7 @@
         width: 65%;
         margin: 0rem 1rem 1rem 1rem;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     &-title{
         font-size: 1.7rem;
@@ -48,7 +48,7 @@
     .massage{
         justify-content: center;
         &-img{
-            width: 30rem;
+            width: 26rem;
         }
     }
 }
