@@ -17,9 +17,7 @@ const Offers = () => {
                             Coffret de noël 2021 
                         </h4>
                         <span className='offers-text'>
-                            une huile essentielle 100ml <br />
-                            une bougie parfumé "vin chaud" <br />
-                            une crème "100% papa noël" <br />
+                            une huile essentielle 100ml                             
                         </span>
                     </div>
                 </div>
@@ -30,9 +28,7 @@ const Offers = () => {
                             Coffret de la Saint-Valentin 
                         </h4>
                         <span className='offers-text'>
-                            une huile essentielle 100ml <br />
-                            une bougie parfumé "fleur de bite" <br />
-                            une crème "ciprine concentrée" <br />
+                            une huile essentielle 100ml 
                         </span>
                     </div>
                 </div>
@@ -43,9 +39,7 @@ const Offers = () => {
                             Coffret Energie
                         </h4>
                         <span className='offers-text'>
-                            une huile essentielle 100ml <br />
-                            une bougie parfumé "Red bull" <br />
-                            une crème qui "déchire sa mère" <br />
+                            une huile essentielle 100ml
                         </span>
                     </div>
                 </div>
@@ -56,9 +50,7 @@ const Offers = () => {
                             Coffret Détente 
                         </h4>
                         <span className='offers-text'>
-                            une huile essentielle 100ml <br />
-                            une bougie parfumé "Canabis" <br />
-                            une crème "à se mettre dans le fi**" <br />
+                            une huile essentielle 100ml 
                         </span>
                     </div>
                 </div>
