@@ -1,0 +1,33 @@
+.massage{    
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+
+    &-img{
+      width: 20rem; 
+      height: 20vh;
+      border-radius: 10px; 
+      box-shadow: black 0.2rem 0.2rem 0.2rem;
+    }
+    &-pregnant, &-stone, &-deep{
+        display: flex;
+        justify-content: center;
+       flex-wrap: wrap;
+        margin-bottom: 1rem;
+        align-items: center;
+    }
+    &-content{
+        width: 65%;
+        margin: 0rem 2rem 1rem 2rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    &-title{
+        font-size: 1.7rem;
+        margin-top: 1rem;
+    }
+    &-title, &-text{
+        font-family: 'Truculenta', sans-serif;
+    }
+}
