@@ -13,7 +13,7 @@ export default [
         title3: "Les 4 respects:",
         text2: [
             "Respect de l'environnement : En utilisant des ingrédients issus de l’agriculture biologique chaque fois que possible. Prioriser l’Eco-conception des produits, des packagings et présentoirs.",
-            "Respect de nos clients : Une qualité professionnelle et des produits avec un dosage pigmentaire répondant à toutes les exigences techniques des professionnels.<br/> Respect des animaux : Couleur Caramel s’est engagée dès sa création à respecter la condition animale en ne réalisant aucun test cosmétique sur les animaux.",
+            "Respec de nos clients : Une qualité professionnelle et des produits avec un dosage pigmentaire répondant à toutes les exigences techniques des professionnels.<br/> Respect des animaux : Couleur Caramel s’est engagée dès sa création à respecter la condition animale en ne réalisant aucun test cosmétique sur les animaux.",
             "Respect de la qualtité : Innover en permanence grâce à notre laboratoire de Recherche & Développement qui conjugue les dernières méthodes de fabrication avec l’intelligence végétale.",
         ],
         url: 'https://www.couleur-caramel.com/',
