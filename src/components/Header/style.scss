@@ -13,7 +13,6 @@
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        flex-wrap: wrap;
         margin-bottom: 0.7rem;
     }
     
@@ -51,14 +50,14 @@
 
     &-button{
         height: 4rem;
-        width: 3rem;
+        width: 5rem;
         display: flex;
         align-items: center;
         flex-flow: column nowrap;
+        justify-content: center;
         color: white;
         background-color: #83992b;        
         border-radius: 10px;
-        padding: 0 0 -1rem 0;
         font-weight: bold;
         font-size: 0.7rem;
         text-shadow: black 0.1em 0.1em 0.2em;
@@ -71,34 +70,28 @@
         margin: 0.25rem 0;
         width: 2rem;
         height: 0.25rem;
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(71, 36, 16);
         border-radius: 10px;
         transform-origin: 1px;
         transition: all 0.3s linear;
-        z-index: 20k;
+        z-index: 20;
         
         &--open{
             &--1{
                 transform: translate(15%) rotate(45deg), ;
                 width: 2.25rem;
                 background-color: rgb(255, 255, 255);
-
-            }
-    
+            }    
             &--2{
                 transform: translateX(100%);
                 opacity: 0;
-            }
-    
+            }    
             &--3{
                 transform: translate(15%) rotate(-45deg);
                 width: 2.25rem;
                 background-color: rgb(255, 255, 255);
 
             }          
-        }
-        &-text{
-          
         }
     }   
 
@@ -112,47 +105,47 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .header-title {
-      animation: header-title-spin 1s ;
-    }
-    .header-title2 {
-        animation: header-title2-spin 1s;
-    }
-  }
+.header-title {
+    animation: header-title-spin 1s ;
+}
+.header-title2 {
+    animation: header-title2-spin 1s;
+}
+}
 
-  @keyframes header-title-spin {
-    from {
-      transform: rotate(0deg);
+@keyframes header-title-spin {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(720deg);
+}
+}
+@keyframes header-title2-spin {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(-720deg);
+}
+}
+
+@media(max-width:600px){
+    .header{
+        &-title{
+            font-size: 3rem;
+            margin-right: -1rem;
+        }
+        &-title2{
+            font-size: 2rem
+        }
     }
-    to {
-      transform: rotate(720deg);
-    }
-  }
-  @keyframes header-title2-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(-720deg);
-    }
-  }
+};
   
-
-
-
 
 @media(max-width:976px){
     .header{
         margin: 0;
-
-        &-titles{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-        &-title{
-            padding-right: 0;
-        }
 
         &-content{
             flex-wrap: nowrap;
@@ -162,72 +155,24 @@
 
         &-slogan{
             width: 100%;
-            font-size: 1.4rem;
+            font-size: 1.7rem;
         }
 
         &-button{
             display: flex;
+            &--open{
+                transition: all 0.4s linear;
+                background-color: transparent; 
+                
+                right: 7%;
+                top: 178px; 
+                transform: translateX(-100%);    
+            }
+            &--closed{
+                transition: all 0.4s linear;
+                transform: translateX(0%); 
+            }
            
         }
-    }
-}
-
-
-.nav{
-    &-list{
-        display: flex; 
-        flex-wrap: wrap;
-        justify-content: center;    
-        margin: 0;
-
-        
-
-    }
-
-    &-links{
-        padding-left: 1vw;
-        color: white;
-        font-weight: bold;
-        text-shadow: black 0.1em 0.1em 0.2em;
-        transition: color 0.5s;
-        font-size: 1.3rem;
-        
-        &:hover {
-            color: #C9EA44;
-            text-decoration: none;
-        
-        }
-    }     
-}
-.active{
-    color: #C9EA44;
-}
-
-@media (max-width: 976px) {
-    .nav{
-        &-list{
-            display: none;
-            &--open{
-                display: flex;
-                flex-flow: column nowrap;
-                align-items: center;
-                background-color: #0D2538;
-                transform: 'translateX(0)';
-                min-height: 100vh;
-                position: fixed;
-                top: 0;
-                right: 0;
-                width: 100%;
-                padding-top: 3.5rem;
-                transition: transform 0.3s ease-in-out;
-                z-index: 19;
-                }
-                
-            }
-            &-links{
-                margin: 0;
-                
-            }
-        
     }
 }

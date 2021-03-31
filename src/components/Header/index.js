@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import Nav from './Nav';
+import data from '../../data/datamenu';
 import './style.scss';
 
 
 const Header = () => {
-    const [open, setOpen] = useState(false)
-
+    const [open, setOpen] = useState(false);
+    const toggle = () => {
+        setOpen(!open)
+    };
     return(
         <div className="header">
             <Link className="header-link" to="/">
@@ -24,7 +27,7 @@ const Header = () => {
                 <h2 className="header-slogan">
                     Institut de Beauté Biologique 🌷
                 </h2>
-                <button className='header-button' onClick={() => setOpen(!open)}>
+                <button className={ open ? 'header-button header-button--open ' : 'header-button header-button--closed'} onClick={toggle}>
                     <div className={ open ? 'header-burger header-burger--open--1 ' : 'header-burger'}/> 
                     <div className={ open ? 'header-burger header-burger--open--2 ' : 'header-burger'}/> 
                     <div className={ open ? 'header-burger header-burger--open--3 ' : 'header-burger'}/>                    
@@ -33,7 +36,7 @@ const Header = () => {
                     </div>
                 </ button >
                 <div className="header-nav">
-                    <Nav open={open}/>
+                    <Nav open={open} toggle={toggle} list={data} />
                 </div>
             </div>
         </div>

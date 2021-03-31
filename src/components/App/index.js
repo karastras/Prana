@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
 
 import Header from '../Header';
 import Footer from '../Footer';
@@ -15,6 +16,8 @@ const App = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
     return (
+      <HelmetProvider>
+
         <div className="app">
             <div className="app-main">
                 <Header />
@@ -22,6 +25,7 @@ const App = () => {
                 <Footer />
             </div>
         </div>
+      </HelmetProvider>
     );
 };
 

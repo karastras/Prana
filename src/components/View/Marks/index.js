@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,7 +23,7 @@ const Marks = ({data}) => {
                 
                     { 
                     data.map((markObject) => (                        
-                        <Link className='marks-link' to={markObject.path}>
+                        <Link className='marks-link' key={markObject.id} to={markObject.path}>
                             <Card className='marks-card' >
                                 <Card.Img className='marks-img' variant="top" src={markObject.url} />
                                 <Card.Body className='marks-body'>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {Helmet} from 'react-helmet';
+import {Helmet} from 'react-helmet-async';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -22,8 +22,8 @@ const Service = ({data}) => {
             <div className='service-content'>
                 {
                     data.map((cardObject)=>(                        
-                        <Link className='service-link' to={cardObject.path}>
-                        <Card key={cardObject.id} className='service-card' >
+                        <Link key={cardObject.id} className='service-link' to={cardObject.path}>
+                        <Card className='service-card' >
                             <Card.Img className='service-img' variant="top" src={cardObject.url} />
                             <Card.Body className='service-body'>
                                 <Card.Title className='service-titles' >{cardObject.title}</Card.Title>

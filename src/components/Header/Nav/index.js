@@ -2,50 +2,22 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './style.scss';
 
-const Nav = ({open}) => {
-    
+const Nav = ({open, toggle, list}) => {
     return(
         <div className="nav" >
-            <ul className={open ? 'nav-list nav-list--open' : 'nav-list'}>
-                <li key="Accueil">
-                    <NavLink exact className="nav-links" to="/" >
-                        Accueil
-                    </NavLink>
-
-                </li>
-                <li key="Prestations">
-                    <NavLink exact className="nav-links" to="/service">
-                        Prestations
-                    </NavLink>
-
-                </li>
-                <li key="Philosophie">
-                    <NavLink exact className="nav-links" to="/philosophy">
-                        Philosophie
-                    </NavLink>
-
-                </li>
-                <li key="Offres">
-                    <NavLink exact className="nav-links" to="/offers">
-                        Offres
-                    </NavLink>
-
-                </li>
-                <li key="Nos marques">
-                    <NavLink exact className="nav-links" to="/marks">
-                        Nos marques
-                    </NavLink>
-
-                </li>
-                <li key="Nous trouver">
-                    <NavLink exact className="nav-links" to="/find-us">
-                        Nous trouver
-                    </NavLink>
-                </li>
-            </ul>
-                
-        </div>
-        
+            <ul className={open ? 'nav-list nav-list--open' : 'nav-list nav-list--closed'}>
+                {
+                    list.map((listObject) => (
+                        <li key={listObject.id} onClick={toggle} >
+                            <NavLink  exact className="nav-links" to={listObject.path} >
+                                {listObject.title}
+                            </NavLink>
+                        </li>
+                        
+                    ))
+                }               
+            </ul>               
+        </div>        
     );
 };
 
