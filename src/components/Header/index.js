@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 import Nav from './Nav';
 import './style.scss';
 
 
 const Header = () => {
+    const [open, setOpen] = useState(false)
+
     return(
         <div className="header">
             <Link className="header-link" to="/">
@@ -22,9 +24,16 @@ const Header = () => {
                 <h2 className="header-slogan">
                     Institut de Beauté Biologique 🌷
                 </h2>
-                <button className="header-button">Menu</ button >
+                <button className='header-button' onClick={() => setOpen(!open)}>
+                    <div className={ open ? 'header-burger header-burger--open--1 ' : 'header-burger'}/> 
+                    <div className={ open ? 'header-burger header-burger--open--2 ' : 'header-burger'}/> 
+                    <div className={ open ? 'header-burger header-burger--open--3 ' : 'header-burger'}/>                    
+                    <div className="header-burger-text">
+                        Menu
+                    </div>
+                </ button >
                 <div className="header-nav">
-                    <Nav />
+                    <Nav open={open}/>
                 </div>
             </div>
         </div>
