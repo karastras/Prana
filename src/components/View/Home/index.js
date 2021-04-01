@@ -28,7 +28,7 @@ const Home = () => {
                                     <img
                                         className="home-img d-block w-100"
                                         src={pictureObject.url}
-                                        alt="First slide"
+                                        alt={pictureObject.alt}
                                     />
                                     <Carousel.Caption>
                                     </Carousel.Caption>

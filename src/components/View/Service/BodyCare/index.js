@@ -25,12 +25,18 @@ const BodyCare = () => {
                     </button>
                 </a>
                 <table id="price-body" className={ opened ? 'bodyCare-price' : 'bodyCare-price-closed'}>
-                    <h3 className='bodyCare-title'>Tarifs</h3>  
-                    {
-                        list.map((priceObject) => (
-                            <Prices key={priceObject.id} {...priceObject} />
+                    <thead>
+                        <tr>
+                            <th className='bodyCare-title'>Tarifs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            list.map((priceObject) => (
+                                <Prices key={priceObject.id} {...priceObject} />
                             ))
-                    }
+                        }
+                    </tbody>
                 </table>
             </div>               
         </div>

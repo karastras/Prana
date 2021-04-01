@@ -25,12 +25,19 @@ const SkinCare = () => {
                     </button>
                 </a>
                 <table id="price-skin" className={ opened ? 'skinCare-price' : 'skinCare-price-closed'}>
-                    <h3 className='skinCare-title'>Tarifs</h3>  
+                    <thead>
+                        <tr>
+                            <th className='skinCare-title'>Tarifs</th>  
+                        </tr>
+                    </thead>
+                    <tbody>
                     {
                         list.map((priceObject) => (
+
                             <Prices key={priceObject.id} {...priceObject} />
                             ))
-                    }
+                        }
+                        </tbody>
                 </table>
             </div>               
         </div>

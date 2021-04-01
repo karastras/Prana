@@ -3,18 +3,19 @@ import { Helmet } from 'react-helmet-async';
 import './style.scss';
 
 const Mark = ({
+    id,
     tagTitle,
     title1,
     title2,
     text1,
-    title3,
     text2,
+    title3,
     url,
     link
 }) => {
     return(
                 /* classname='mark' do some conflicts in css with Bootstrap and others, so i use 'label' */
-            <div  className='label'>                    
+            <div key={id} className='label'>                    
                 <Helmet>
                     <title>{tagTitle}</title>
                 </Helmet>
@@ -27,10 +28,10 @@ const Mark = ({
                     </h3>
                     <ol className='label-text'>
                         {
-                        text1.map((text) => {
+                        text1.map((textObject) => {
                             return (
-                            <li >
-                                {text}
+                            <li key={textObject.id} >
+                                {textObject.text}
                             </li>
                             );
                         })}
@@ -40,10 +41,10 @@ const Mark = ({
                     </h3 >
                     <ol className='label-text'>
                         {
-                            text2.map((text) => {
+                            text2.map((textObject) => {
                                 return (
-                                <li >
-                                    {text}
+                                <li key={textObject.id} >
+                                    {textObject.text}
                                 </li>
                                 );
                         })}

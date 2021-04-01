@@ -78,7 +78,7 @@ export default [
     price: '45'  
     },
     {
-    id: 13,
+    id: 14,
     label: 'Maquillage cours',
     time: '',
     price: '40'  

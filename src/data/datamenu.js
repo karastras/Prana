@@ -2,7 +2,7 @@
 export default  [
     {
         id: 1,
-        title: 'Acceuil',
+        title: 'Accueil',
         path : '/',      
     },
     {

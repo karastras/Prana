@@ -32,13 +32,23 @@ const Epilation = () => {
                         </button>
                     </a>
                     <table id="price-women" className={ openedWo ? 'epilation-priceWo' : 'epilation-priceWo-closed'}>
-                        <h3 className='epilation-title'>Tarifs Femmes</h3>  
+                        <thead>
+                            <tr>
+                                <th className='epilation-title'>Tarifs Femmes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
                         {
                             listWo.map((priceObject) => (
                                 <Prices key={priceObject.id} {...priceObject} />
                                 ))
-                        }
-                        <h3 className='epilation-title'>Forfait</h3>                       
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th className='epilation-title'>Forfait</th>                       
+                            </tr>
                             <tr>
                                 <td>3 zones</td>
                                 <td></td>
@@ -49,6 +59,7 @@ const Epilation = () => {
                                 <td></td>
                                 <td className='epilation-package-reduce'>-10%</td>
                             </tr> 
+                        </tfoot>
                     </table>
                 </div>               
             </div>
@@ -64,13 +75,22 @@ const Epilation = () => {
                     </button>
                 </a>
                     <table id="price-men" className={openedMen? 'epilation-priceMen' : 'epilation-priceMen-closed'}>
-                        <h3 className='epilation-title'>Tarifs Hommes</h3>
-                        {
-                            listMen.map((priceObject) => (
-                                <Prices key={priceObject.id} {...priceObject} />
+                        <thead>
+                            <tr>
+                                <th className='epilation-title'>Tarifs Hommes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                listMen.map((priceObject) => (
+                                    <Prices key={priceObject.id} {...priceObject} />
                                 ))
-                        }
-                        <h3 className='epilation-title'>Forfait</h3>                       
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th className='epilation-title'>Forfait</th>                       
+                            </tr>
                             <tr>
                                 <td>3 zones</td>
                                 <td></td>
@@ -81,6 +101,7 @@ const Epilation = () => {
                                 <td></td>
                                 <td className='epilation-package-reduce'>-10%</td>
                             </tr>                       
+                        </tfoot>
                     </table>
                 </div> 
             </div>
