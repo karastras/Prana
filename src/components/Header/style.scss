@@ -2,18 +2,15 @@
     margin: 2rem 3rem 2rem 3rem;
 
     &-link{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-bottom: 0.7rem;
         transition: text-shadow 0.5s;
         &:hover{
             text-decoration: none;
             text-shadow: white 0.3em 0.1em 0.2em;
         }
-    }
-
-    &-titles{
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        margin-bottom: 0.7rem;
     }
     
     &-title{
@@ -90,7 +87,6 @@
                 transform: translate(15%) rotate(-45deg);
                 width: 2.25rem;
                 background-color: rgb(255, 255, 255);
-
             }          
         }
     }   
@@ -130,22 +126,9 @@ to {
 }
 }
 
-@media(max-width:600px){
-    .header{
-        &-title{
-            font-size: 3rem;
-            margin-right: -1rem;
-        }
-        &-title2{
-            font-size: 2rem
-        }
-    }
-};
-  
-
 @media(max-width:976px){
     .header{
-        margin: 0;
+        margin: 1rem 0;
 
         &-content{
             flex-wrap: nowrap;
@@ -162,8 +145,7 @@ to {
             display: flex;
             &--open{
                 transition: all 0.4s linear;
-                background-color: transparent; 
-                
+                background-color: transparent;                
                 right: 7%;
                 top: 178px; 
                 transform: translateX(-100%);    
@@ -176,3 +158,19 @@ to {
         }
     }
 }
+
+@media(max-width:600px){
+    .header{
+        &-title{
+            font-size: 3rem;
+            margin-right: -1rem;
+        }
+        &-title2{
+            font-size: 2rem
+        }
+        &-slogan{
+            font-size: 1.4rem;
+        }
+    }
+}
+  

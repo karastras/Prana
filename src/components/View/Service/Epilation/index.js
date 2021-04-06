@@ -34,12 +34,13 @@ const Epilation = () => {
                     <table id="price-women" className={ openedWo ? 'epilation-priceWo' : 'epilation-priceWo-closed'}>
                         <thead>
                             <tr>
-                                <th className='epilation-title'>Tarifs Femmes</th>
+                                <th className='epilation-title'>
+                                    Tarifs Femmes
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
-
-                        {
+                            {
                             listWo.map((priceObject) => (
                                 <Prices key={priceObject.id} {...priceObject} />
                                 ))

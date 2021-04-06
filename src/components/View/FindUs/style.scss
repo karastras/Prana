@@ -1,6 +1,5 @@
 .findUs{
-    width: 100%;
-    
+    width: 100%;    
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -18,7 +17,6 @@
 
     &-content{
         width: 400px;
-        height: 500px;
         display: flex;
         flex-direction: column;
         font-family: 'Truculenta', sans-serif;
@@ -29,7 +27,6 @@
         border: black 2px solid;
         box-shadow: black 0.2rem 0.2rem 0.2rem;
         text-align: center;
-
     }
 
     &-title{
@@ -75,11 +72,22 @@ address{
 
 @media(max-width:480px){
     
-    
-    iframe{
-        width: 365px;
-    }
+    .findUs{
+        margin-top: 2rem;
 
+        &-content{
+            width: 330px;
+        }
+        &-left, &-right{
+            margin: 0;
+        }
+        &-map{
+            width: 330px;
+        }
+    }
+    iframe{
+        width: 330px;
+    }
 }
 
 @media(min-width:2400px){

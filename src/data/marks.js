@@ -6,6 +6,7 @@ export default [
        url: "https://nsm09.casimages.com/img/2021/03/18//21031810380617254117321778.jpg",
        title: 'Couleur Caramel',
        text: 'La marque naturelle et bio de référence',
+       alt: "logo de la marque Couleur Caramel",
     },
     {
         id: 2,
@@ -13,6 +14,7 @@ export default [
         url: "https://nsm09.casimages.com/img/2021/03/18//21031810380717254117321780.jpg",
         title: "Phyt's",
         text: "Cosmétique bio, 100% d'ingrédients d'origine naturelle depuis 1972",
+        alt: "logo de la marque Phyt's",
      },
      {
         id: 3,
@@ -20,6 +22,7 @@ export default [
         url: "https://nsm09.casimages.com/img/2021/03/18//21031810380617254117321777.jpg",
         title: 'Vitacology',
         text: 'La nature, soin de votre vie',
+        alt: "logo de la marque Vitacology",
      },
      {
         id: 4,
@@ -27,5 +30,6 @@ export default [
         url: "https://nsm09.casimages.com/img/2021/03/18//21031810380717254117321779.jpg",
         title: 'Peggy Sage',
         text: 'Une conception globale de la beauté depuis plus de 90 ans',
+        alt: "logo de la marque Peggy Sage",
      }
 ]

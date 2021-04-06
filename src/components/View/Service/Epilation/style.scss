@@ -74,15 +74,17 @@
 @media(max-width:480px){
     .epilation{
         &-img{
-            width: 30rem;
+            width: 22rem;
             height: 59vh;
+            margin-top: 2rem;
+        }
+        &-priceWo, &-priceMen{
+            width: 22rem;
         }
         &-price{
             width: 95%;
             font-size: 1.4rem;
-        }
-
-        
+        }       
     }
 }
 
@@ -92,7 +94,6 @@
             width: 40rem;
             height: 70vh;
         }
-    }
-    
+    }    
 }
 

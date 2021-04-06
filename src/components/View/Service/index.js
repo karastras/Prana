@@ -14,29 +14,26 @@ const Service = ({data}) => {
             <Helmet>
                 <title>Prana | Prestations</title>
             </Helmet>
-            <h2 className='service-title'>
-                
-                    Retrouvez tous nos soins pour femmes et hommes               
-                
+            <h2 className='service-title'>                
+                    Retrouvez tous nos soins pour femmes et hommes                
             </h2>
             <div className='service-content'>
                 {
                     data.map((cardObject)=>(                        
                         <Link key={cardObject.id} className='service-link' to={cardObject.path}>
-                        <Card className='service-card' >
-                            <Card.Img className='service-img' variant="top" src={cardObject.url} alt={cardObject.alt} />
-                            <Card.Body className='service-body'>
-                                <Card.Title className='service-titles' >{cardObject.title}</Card.Title>
-                                <Card.Text className='service-text'>
-                                    {cardObject.text}
-                                </Card.Text>
-                                    <button className='service-button'>Consulter</button>
-                            </Card.Body>
-                        </Card>
-                    </Link>
-                        )
-                        )
-                    }                
+                            <Card className='service-card' >
+                                <Card.Img className='service-img' variant="top" src={cardObject.url} alt={cardObject.alt} />
+                                <Card.Body className='service-body'>
+                                    <Card.Title className='service-titles' >{cardObject.title}</Card.Title>
+                                    <Card.Text className='service-text'>
+                                        {cardObject.text}
+                                    </Card.Text>
+                                        <button className='service-button'>Consulter</button>
+                                </Card.Body>
+                            </Card>
+                        </Link>
+                    ))
+                }                
             </div>            
         </div>
     );

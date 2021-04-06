@@ -10,20 +10,19 @@
         align-items: flex-end;
         margin: 3em 1em 0em 1em;
     }
+    
     &-text{
         font-weight: bold;
         font-family: 'Architects Daughter', cursive;
         font-size: 1.5rem;
-
-
     }
+
     &-author{
         font-weight: bold;
         font-size: 4rem;
         font-family: 'Satisfy', cursive;
         margin-top: 0.3em;
-        margin-right: 0.5em;
-        
+        margin-right: 0.5em;        
     }
     
     &-content{
@@ -34,21 +33,6 @@
         margin: 1em;
     }
 }
-
-@media(max-width:400px){
-    .philosophy{
-        &-content{
-            font-size: 1rem;
-        }
-    }
-
-
-}
-
-
-
-
-
 
 @media(max-width:480px){
     .philosophy{
@@ -61,10 +45,12 @@
             margin: 1rem 0;
         }
         &-content{
-            margin:1rem 0;            
+            margin:1rem 0;
+            font-size: 1rem;            
         }
     }
 }
+
 @media(min-width:2100px){
     .philosophy{
         width: 80%;
@@ -82,7 +68,5 @@
             font-size: 5rem;
         }
     }
-
-
 }
 

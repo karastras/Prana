@@ -66,24 +66,22 @@
 
 @media(max-width:480px){
     .marks{
-        margin: 0;
+        margin: 2rem 0;
 
         &-title{
             text-align: center;
+            font-size: 1.1rem;
         }
         &-content{
             margin:0;
         }
-        &-img{
-            
-            height: 120px;
-
+        &-img{            
+            height: 130px;
         }
         &-card{
-            width: 11rem;
-            height: 17rem;
-            margin: 0.5rem;
-
+            width: 10rem;
+            height: 18rem;
+            margin: 0.3rem;
         }
         &-button{
             display: none;

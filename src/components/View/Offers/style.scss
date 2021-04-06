@@ -22,8 +22,7 @@
         margin: 1rem;
     }
     &-content{
-        height: 40%;
-        
+        height: 40%;        
         padding: 1rem;
         background-color: blanchedalmond;
         border-radius: 0 0 50% 50%;
@@ -45,21 +44,28 @@
 
 @media(max-width:480px){
     .offers{        
-        
-        &-img{
-            height: 300px;
+        margin-top: 2rem;
+        &-title{
+            font-size: 1.2rem;
         }
-    }
-    
+        &-offer{
+            width: 160px;
+            height: auto;
+            margin: 0.3rem;            
+        }
+        &-img{
+            height: 125px;
+        }
+        &-content{
+            height: 125px;
+            padding: 0.5rem 0;
+        }
+        &-titles{
+            font-size: 1rem;
+        }
+        &-text{
+            font-size: 0.7rem;
+        }
+       
 }
-
-@media(min-width:2100px){
-    .offers{
-        
-        
-        &-img{
-            height: 300px;
-        }
-    }
-    
 }

@@ -8,24 +8,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.scss';
 
 const Marks = ({data}) => {
-    return (
-        
+    return (        
         <div className='marks'>
-        <Helmet>
-            <title>Prana | Nos marques</title>
-        </Helmet>
-          <h2 className='marks-title'>
-                
+            <Helmet>
+                <title>Prana | Nos marques</title>
+            </Helmet>
+            <h2 className='marks-title'>                
                     Retrouvez toutes nos marques utilisées en institut               
-               
             </h2>
-            <div className='marks-content'>
-                
-                    { 
+            <div className='marks-content'>                
+                { 
                     data.map((markObject) => (                        
                         <Link className='marks-link' key={markObject.id} to={markObject.path}>
                             <Card className='marks-card' >
-                                <Card.Img className='marks-img' variant="top" src={markObject.url} />
+                                <Card.Img className='marks-img' variant="top" src={markObject.url} alt={markObject.alt} />
                                 <Card.Body className='marks-body'>
                                     <Card.Title className='marks-titles' >{markObject.title}</Card.Title>
                                     <Card.Text className='marks-text'>
@@ -35,8 +31,8 @@ const Marks = ({data}) => {
                                 </Card.Body>
                             </Card>
                         </Link>
-                            ))
-                    }                
+                    ))
+                }                
             </div>
         </div>
     );
