@@ -17,7 +17,6 @@ const App = () => {
   }, [pathname]);
     return (
       <HelmetProvider>
-
         <div className="app">
             <div className="app-main">
                 <Header />

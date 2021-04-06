@@ -30,8 +30,8 @@ const Mark = ({
                         {
                         text1.map((textObject) => {
                             return (
-                            <li key={textObject.id} >
-                                {textObject.text}
+                            <li key={textObject} >
+                                {textObject}
                             </li>
                             );
                         })}
@@ -43,8 +43,8 @@ const Mark = ({
                         {
                             text2.map((textObject) => {
                                 return (
-                                <li key={textObject.id} >
-                                    {textObject.text}
+                                <li key={textObject} >
+                                    {textObject}
                                 </li>
                                 );
                         })}

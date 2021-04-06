@@ -15,7 +15,7 @@ const BodyCare = () => {
             <Helmet>
                 <title>Prana | Soin du corps</title>
             </Helmet>          
-            <img className='bodyCare-img'src="https://nsm09.casimages.com/img/2021/03/18//21031810380917254117321789.jpg" alt="" />
+            <img className='bodyCare-img'src="https://nsm09.casimages.com/img/2021/03/18//21031810380917254117321789.jpg" alt="tarifiaction des prestations sur les soins du corps" />
             <div className='bodyCare-link'>
                 <a href="#price-body">
                     <button className='bodyCare-button' type='button' onClick={() => {

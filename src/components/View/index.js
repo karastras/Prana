@@ -29,6 +29,7 @@ import Error from './Error404';
 import dataService from '../../data/service';
 import dataMarks from '../../data/marks';
 import dataMark from '../../data/mark';
+import dataMassage from '../../data/massage';
 
 import './style.scss';
 
@@ -52,12 +53,13 @@ const View = () => {
                     <Route exact path='/epilation' component={Epilation} />
                     <Route exact path='/skinCare' component={SkinCare} />
                     <Route exact path='/bodyCare' component={BodyCare} />
-                    <Route exact path='/massage' component={Massage} />
+                    <Route exact path='/massage' render={() => (
+                        <Massage data={dataMassage} />
+                        )}/>
 
                     {/* View from Marks component */}
                     {
                         dataMark.map((markObject)=>(
-
                           <Route key={markObject.id} exact path={markObject.path} render={() => (
                               <Mark {...markObject} />
                               )}/>

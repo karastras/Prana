@@ -22,7 +22,7 @@ const Epilation = () => {
                 <title>Prana | Epilation</title>
             </Helmet>
             <div className='epilation-woman'>
-                <img className='epilation-img'src="https://nsm09.casimages.com/img/2021/03/18//21031810381017254117321791.jpg" alt="" />
+                <img className='epilation-img'src="https://nsm09.casimages.com/img/2021/03/18//21031810381017254117321791.jpg" alt="tarifiaction des prestations en épilation pour femmes" />
                 <div className='epilation-link'>
                     <a href="#price-women">
                         <button className='epilation-button' type='button' onClick={() => {
@@ -65,7 +65,7 @@ const Epilation = () => {
             </div>
 
             <div className='epilation-man'>
-                <img className='epilation-img'src="https://nsm09.casimages.com/img/2021/03/18//21031810381017254117321790.jpg" alt="" />
+                <img className='epilation-img'src="https://nsm09.casimages.com/img/2021/03/18//21031810381017254117321790.jpg" alt="tarifiaction des prestations en épilation pour homme" />
                 <div className='epilation-link'>
                 <a href="#price-men">
                     <button className='epilation-button' type='button' onClick={() => {
