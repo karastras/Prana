@@ -43,9 +43,9 @@ const Mark = ({
                         {
                             text2.map((textObject) => {
                                 return (
-                                <li key={textObject} >
-                                    {textObject}
-                                </li>
+                                    <li key={textObject} >
+                                        {textObject}
+                                    </li>
                                 );
                         })}
                     </ol>

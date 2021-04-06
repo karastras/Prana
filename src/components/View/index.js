@@ -30,6 +30,7 @@ import dataService from '../../data/service';
 import dataMarks from '../../data/marks';
 import dataMark from '../../data/mark';
 import dataMassage from '../../data/massage';
+import dataOffers from '../../data/offers';
 
 import './style.scss';
 
@@ -43,7 +44,9 @@ const View = () => {
                         <Service {...props} data={dataService} />
                     )}/>
                     <Route exact path='/philosophy' component={Philosophy} />
-                    <Route exact path='/offers' component={Offers} />
+                    <Route exact path='/offers' render={() => (
+                        <Offers data={dataOffers} />
+                        )}/>
                     <Route exact path='/marks' render={() => (
                         <Marks data={dataMarks} />
                     )}/>
