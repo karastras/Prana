@@ -80,16 +80,16 @@
 
 @media(max-width:480px){
     .home{
-        margin: 2rem 0;
+        margin: 4rem 0;
             &-carousel{
-                width: 100%;
-                margin-bottom: 2rem;            
+                width: 100%; 
+                margin-top: 3rem;           
             }
             &-text{
                 flex-direction: column;
             }
             &-img{
-                height: 14rem
+                height: 16rem
             }
             &-link{
                 margin: 0.5rem 0 0 0;
@@ -107,10 +107,10 @@
 
 @media(min-width:2100px){
     .home{
+
         &-carousel{
             width: 80%;
-        }
-        
+        }        
         &-img{
             height: 55rem
         }

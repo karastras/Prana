@@ -43,6 +43,6 @@ export default [
             "1 bon pour massage relaxant",
             "1 crème + 1 huile essentielle",
         ],
-        alt: "une femme sur le ventre se fait masser le dos",
+        alt: "décoration de petits flacons, des encens et des fleurs",
      }
 ]

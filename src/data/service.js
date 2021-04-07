@@ -14,7 +14,7 @@ export default [
         url: "https://nsm09.casimages.com/img/2021/03/18//21031810380717254117321781.jpg",
         title: 'Prendre soin de sa peau',
         text: ' Modelage du dos, cuir chevelu, soins des mains et des pieds, maquillage,...',
-        alt: "image montrant une jeune femme avoir un soin du visage par une autre personne qui lui étale de la crême sur le visage",
+        alt: "image montrant une jeune femme ayant un soin du visage par une autre personne qui lui applique de la crême sur le visage",
      },
      {
         id: 3,
@@ -22,7 +22,7 @@ export default [
         url: "https://nsm09.casimages.com/img/2021/03/18//21031810380717254117321782.jpg",
         title: 'Chouchouter son corps',
         text: 'Modelage décontractant, relaxant, tonifiant, fermeté, gommage,...',
-        alt: "une femme s'étale de la crême sur sa main gauche",
+        alt: "une femme s'applique de la crême sur sa main gauche",
      },
      {
         id: 4,

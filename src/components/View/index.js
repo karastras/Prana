@@ -70,6 +70,7 @@ const View = () => {
                     }
 
                     {/* View from Footer component */}
+                    <Route exact path='/contactez-nous' component={FindUs} />
                     <Route exact path='/legal-notice' component={LegalNotice} />
                     <Route exact path='/sitemap' component={Sitemap} />
 
