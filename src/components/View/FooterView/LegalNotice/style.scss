@@ -1,0 +1,10 @@
+.legal{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    &-head, &-foot{
+        font-family: 'Truculenta', sans-serif;
+        font-size: 1.3rem;
+        
+    }
+}
