@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Carousel from 'react-bootstrap/Carousel';
+import {Link} from 'react-router-dom';
 
 // pictures carousel
 import picture01 from '../../../../assets/prana01.JPG';
@@ -25,26 +26,28 @@ const LegalNotice = () => {
                 <title>Prana | Mentions légales</title>
             </Helmet>
             <div className="legal-head">
-                <h3 className="legal-title">Hello, </h3>
+                <h3 className="legal-title">Hello 👋 </h3>
                 <div className="legal-content">
-                    <span>
-                        avant tout merci d'avoir passer de votre temps à découvrir le site et notamment cette page qui n'est en général pas des plus intéressantes à consulter.
+                    <p className="legal-text" >
+                        Avant tout merci d'avoir passé de votre temps à découvrir le site 🙏 et notamment cette page qui n'est en général pas des plus intéressante à consulter. 😬 <br/>
                         Je vais essayer de faire au mieux pour rendre ce moment le moins désagréable possible. <br/>
-                        Avant tout, le pourquoi de l'existance de ce site: <br/>
-                    </span>
-                    <span>
-                        Après un rendez-vous dans un institut esthétique à Rouffach en Alsace, j'ai consulté le site internet existant, développé avec le site<a target='_blank' rel='noreferrer' href="https://www.wix.com/">Wix</a>*. <br/>
-                        Le site présentait quelques bugs d'affichage, des liens non-fonctionnels, la partie responsive était de mauvaise qualité pour l'expérience utilisateur. <br/>
-                        et beaucoup de points de qualité web <a target='_blank' rel='noreferrer' href="https://directory.opquast.com/fr/certificat/Q1OE2V/">OPQUAST</a>* étaient non-respectés.
-                        Suite à nos discussions, un contrat oral a établit entre nous m’engageait à produire un site fonctionnel, similaire à celui existant sous un délai d’un mois et
-                        serait le point de départ d'ajouts de nouvelles fonctionnalités pour la suite. <br/>
-                        Mais par intérêt envers des services plus complet et plus adaptés à son activité, le projet a été annulé deux jours avant la date de livraison et
+                    </p>
+                    <p className="legal-text">
+                        Avant tout, les raisons de l'existence de ce site 🤔:
+                    </p>
+                    <p className="legal-text">
+                        Après un rendez-vous dans un institut esthétique à Rouffach en Alsace, j'ai consulté le site internet existant, développé avec le site <a target='_blank' rel='noreferrer' href="https://www.wix.com/">Wix</a>*.
+                        Le site présentait quelques bugs d'affichage, des liens non-fonctionnels, la partie responsive était de mauvaise qualité pour l'expérience utilisateur 📵
+                        et beaucoup de points de qualité web <a target='_blank' rel='noreferrer' href="https://directory.opquast.com/fr/certificat/Q1OE2V/">OPQUAST</a>* étaient non-respectés. <br/>
+                        Suite à une discussions avec la gérante de l'établissement, un contrat oral a été établit entre nous qui m’engageait à produire un site fonctionnel, similaire à celui existant sous un délai d’un mois et
+                        qui serait le point de départ d'ajouts de nouvelles fonctionnalités pour la suite. 🚀 <br/>
+                        Mais, par intérêt envers des services plus complets et plus adaptés à son activité, le projet a été annulé deux jours avant la date de livraison et
                         n’a donc plus eu aucune utilité ou raison d’être. Avec un accord écrit de sa part j'ai pu conserver et utiliser le travail effectué à des fins professionnelles 
-                        pour enrichir mon portefolio et pouvoir montrer mon savoir-faire sur un projet concret.<br/>
-                    </span>
-                    <span>
-                        Vous trouverez dans le Carousel ci-dessous les captures d'écrans de l'ancien site en question qui m'a servit de maquette pour mon travail.
-                    </span>
+                        pour enrichir mon portefolio et pouvoir montrer mon savoir-faire sur un projet concret. 👨‍💻<br/>
+                    </p>
+                    <p className="legal-text">
+                        Vous trouverez dans le caroussel ci-dessous les captures d'écrans de l'ancien site en question qui m'ont servit de maquette pour mon travail.
+                    </p>
                 </div>
             </div>            
             <Carousel className='legal-carousel' interval={null}>                        
@@ -140,17 +143,22 @@ const LegalNotice = () => {
                 </Carousel.Item>                        
             </Carousel>
             <div className="legal-foot">
-                <span>
-                    Toutes les photos, images (hormis les plaquettes de tarifs) proviennent dans des banques d’images gratuite comme 
-                    <a target='_blank' rel='noreferrer' href="https://pixabay.com/fr/">Pixabay</a>*, elles ne sont pas représentatives
-                    de la réalité des produits et de l'institut. Les offres présentes dans la section "Offres" ne sont là qu’à titre d’exemple.<br/>                    
-                    Le site à été entièrement développé sous REACT v17 en partant du create-react-app. Seul Bootstrap a été utlisé pour le "Carousel" et "certaines Cards". <br/>
-                    Il respecte aux mieux les normes établit par OPQUAST , notamment l'accessibilité aux personnes en situtations de handicap.
-                </span>
-                <span>
-                    Pour toutes demandes,suggestions,.... vous pouvez m'adresser directement un mail <a href="mailto:burrusjerome@gmail.com">burrusjerome@gmail.com</a>* . <br/>
+                <p className="legal-text">
+                    Toutes les photos, images (hormis les plaquettes de tarifs) proviennent des banques d’images gratuites comme <a target='_blank' rel='noreferrer' href="https://pixabay.com/fr/">Pixabay</a>*, elles ne sont pas représentatives
+                    de la réalité des produits et de l'institut. Les offres présentes dans la section "<Link exact className="legal-link" to="/offers" >Offres</Link>" ne sont là qu’à titre d’exemple.<br/>                    
+                    Le site a été entièrement développé sous REACT v17 en partant du create-react-app. Seul Bootstrap a été utlisé pour le "Carousel" et certaines "Cards". <br/>
+                    Il respecte au mieux les normes établies par <a target='_blank' rel='noreferrer' href="https://directory.opquast.com/fr/certificat/Q1OE2V/">OPQUAST</a>*, notamment l'accessibilité aux personnes en situtation de handicap. Le code source de ce site est la propriété
+                    de Mr Burrus Jérôme 8, rue des Récollets 68250 Rouffach et exclus tous droits d'utilisation, de reproduction sans son accord.
+                </p>
+                <p className="legal-text">
+                    Pour toutes demandes, suggestions,... vous pouvez adresser directement un mail à <a href="mailto:burrusjerome@gmail.com">burrusjerome@gmail.com</a> . <br/>
+                </p>
+                <p className="legal-text">
                     Merci à vous d'avoir été jusque là 👏
-                </span>                    
+                </p>
+                <p className="legal-prevent">
+                    (* En cliquant sur les liens ci-dessus vous allez être dirigé vers une page externe au site)
+                </p>
             </div>
         </div>
     );

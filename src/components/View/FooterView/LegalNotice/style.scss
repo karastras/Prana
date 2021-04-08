@@ -2,9 +2,48 @@
     display: flex;
     flex-direction: column;
     text-align: left;
+    &-title{
+        font-size: 2.2rem;
+        margin-left: 2rem;
+    }
     &-head, &-foot{
         font-family: 'Truculenta', sans-serif;
-        font-size: 1.3rem;
+        font-size: 1.8rem;
+        margin: 1rem;        
+    }
+    &-text{
+        margin: 2rem;
+    }
+    &-prevent{
+        font-size: 1rem;
+        margin-left: 2rem;
+        text-align: right;
+    }
+    &-link{
+        color: white;
+        font-weight: bold;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        transition: color 0.5s;
+        
+        
+        &:hover {
+            color: #C9EA44;
+            text-decoration: none;
+        
+        }
+    }
+    &-carousel{
+        margin: 3rem 0;
+        width: 70%;
+        margin: auto;
+        box-shadow: black 0em 0em 1em;        
+        border-radius: 10px;
+        background: rgb(82, 79, 74);
+    }
+    &-img{
+        object-fit:scale-down; 
+        height: 55rem;
         
     }
 }
+
