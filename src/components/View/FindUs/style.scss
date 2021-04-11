@@ -70,11 +70,12 @@ address{
     margin: 0;
 }
 
+
 @media(max-width:480px){
     
     .findUs{
         margin-top: 2rem;
-
+        
         &-content{
             width: 330px;
         }
@@ -87,6 +88,23 @@ address{
     }
     iframe{
         width: 330px;
+    }
+}
+
+@media(max-width:350px){
+    .findUs{
+        &-map{
+            width: 250px;
+            height: 350px;
+        }
+        &-content{
+            width: 250px;
+            
+        }
+    }
+    iframe{
+        width: 250px;
+        height: 350px;
     }
 }
 

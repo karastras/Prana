@@ -58,7 +58,6 @@ const FindUs = () => {
                     <iframe alt='Carte google montrant où Prana se situe dans Rouffach Alsace France' title="Prana on googlemap"           
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10687.83475938612!2d7.2992215!3d47.9565229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf9bd898d291e1943!2sPrana%2C%20jardin%20du%20Corps!5e0!3m2!1sfr!2sch!4v1614927607483!5m2!1sfr!2sch" 
                     width="600" height="500" loading="lazy"></iframe>
-
                 </div>
             </div>                        
         </div>

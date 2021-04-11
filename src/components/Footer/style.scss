@@ -33,7 +33,15 @@
 @media(max-width:480px){
     .footer{
        &-content{
-           font-size: 0.7rem;
+           font-size: 0.6rem;
+       }
+    }
+
+}
+@media(max-width:350px){
+    .footer{
+       &-content{
+           font-size: 0.4rem;
        }
     }
 

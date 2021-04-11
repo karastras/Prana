@@ -21,3 +21,18 @@
     }
 }
 
+@media(max-width:600px){
+    .label{
+        width: 100%;
+        &-titlepage{
+            font-size: 2.4rem;
+        }
+        &-title{
+            font-size: 1.8rem;
+        }
+        &-text{
+            font-size: 1.2rem;
+            text-align: left;
+        }
+    }
+}

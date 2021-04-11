@@ -9,6 +9,10 @@
         flex-direction: column;
         margin: 0 10%;
     }
+    // if burger opened, background can't be scroll
+    &--open{
+        position: fixed;
+    }
 }
 
 @media(max-width:976px){
@@ -16,10 +20,6 @@
         background: none;
         &-main{
             margin:0;
-        }
-      
+        }      
     }
-
-    
-
 }
