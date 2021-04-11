@@ -1,18 +1,15 @@
 .skinCare{
     width: 100%;    
     text-align: center;   
-
     &-img{
         width: 60%;
         height: 580px;        
     }
-
     &-link{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     &-button{
         margin-top: 1rem;
         color: white;
@@ -30,7 +27,6 @@
                 text-decoration: none;            
             }
     }
-
     &-price{
         margin-top: 1rem;
         width: 40rem;
@@ -49,12 +45,13 @@
             &-closed{
                 display: none;
             }
-    }
-    
+    }    
     &-title{
         text-align: right;
     }
 }
+
+// Media Queries
 
 @media(max-width:480px){
     .skinCare{
@@ -75,6 +72,5 @@
         &-img{
             height: 950px;
         }
-    }
-    
+    }    
 }

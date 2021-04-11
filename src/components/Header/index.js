@@ -8,18 +8,19 @@ import './style.scss';
 const Header = ({open, toggle}) => {
     return(
         <div className="header">
-            <Link className="header-link" to="/">
-                <h1 className="header-title">
-                    Prana
-                </h1>
-                <h2 className="header-title2">
+            <div className='header-titles'>
+                <Link className="header-title" to="/">
+                        Prana
+                </Link>                
+                <Link className="header-title2">
                     Jardin du Corps
-                </h2>
-            </Link>
+                </Link>
+            </div> 
             <div className="header-content">
                 <h2 className="header-slogan">
                     Institut de Beauté Biologique 🌷
                 </h2>
+{/* _________________________________________________ burger menu _____________________________________________________________________ */}
                 <button className={ open ? 'header-button header-button--open ' : 'header-button header-button--closed'} onClick={toggle}>
                     <div className={ open ? 'header-burger header-burger--open--1 ' : 'header-burger'}/> 
                     <div className={ open ? 'header-burger header-burger--open--2 ' : 'header-burger'}/> 
@@ -28,6 +29,7 @@ const Header = ({open, toggle}) => {
                         Menu
                     </div>
                 </ button >
+{/* ____________________________________________________________________________________________________________________________________*/}
                 <div className="header-nav">
                     <Nav open={open} toggle={toggle} list={data} />
                 </div>

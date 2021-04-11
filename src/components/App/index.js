@@ -10,18 +10,17 @@ import './style.scss';
 
 
 const App = () => {
-// function for automatically scroll-top 
+// function to automatically scroll-top 
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
-// function for the buger menu
+
+// function to open/close the buger menu
   const [open, setOpen] = useState(false);
     const toggle = () => {
         setOpen(!open)
-    };
-
-    
+    };    
     return (
       <HelmetProvider>
         <div className={ open ? 'app--open ' : 'app' }>

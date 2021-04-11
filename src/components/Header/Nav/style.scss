@@ -16,14 +16,16 @@
         
         &:hover {
             color: #C9EA44;
-            text-decoration: none;
-        
+            text-decoration: none;        
         }
     }     
 }
 .active{
     color: #C9EA44;
 }
+
+
+// Media Queries
 
 @media (max-width: 976px) {
     .nav{

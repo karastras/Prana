@@ -5,6 +5,7 @@ import './style.scss';
 const Nav = ({open, toggle, list}) => {
     return(
         <div className="nav" >
+                                                    {/* burger menu */}
             <ul className={open ? 'nav-list nav-list--open' : 'nav-list nav-list--closed'}>
                 {
                     list.map((listObject) => (

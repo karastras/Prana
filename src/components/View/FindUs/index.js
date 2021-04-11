@@ -43,6 +43,7 @@ const FindUs = () => {
                                 Suivez-nous sur Facebook*
                             </h4>
                             <div>
+                                                        {/* logo Facebook */}
                             <a target='_blank' rel='noreferrer' href="https://www.facebook.com/Prana-Jardin-du-Corps-470208896661318"
                                 className="youtube social">
                                 <FontAwesomeIcon icon={faFacebook} size="3x" alt="icone facebook cliquable qui renvoi à la page facebook de Prana" />

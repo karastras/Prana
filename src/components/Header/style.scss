@@ -1,18 +1,14 @@
 .header{
-    margin: 2rem 3rem 2rem 3rem;
+    margin: 2rem 3rem;
 
-    &-link{
+// titles = title + tilte2
+
+    &-titles{
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        margin-bottom: 0.7rem;
-        transition: text-shadow 0.5s;
-        &:hover{
-            text-decoration: none;
-            text-shadow: white 0.3em 0.1em 0.2em;
-        }
-    }
-    
+        margin-bottom: 0.7rem;        
+    }    
     &-title{
         color: #4F412F; 
         padding-right: 20px;
@@ -21,29 +17,49 @@
         font-family: 'Fredericka the Great', cursive;
         font-weight: bold;
         margin: 0;
+        transition: text-shadow 0.5s;
+        &:hover{
+            color: #4F412F;
+            text-decoration: none;
+            text-shadow: white 0.05em 0.05em 0.05em;
+        }
     }
-
     &-title2{
         font-size: 3.5em;
         font-family: 'Truculenta', sans-serif;
         color: #434E16;
         margin-bottom: 3px;
+        transition: text-shadow 0.5s;
+        &:hover{
+            color: #434E16;
+            text-decoration: none;
+            text-shadow: white 0.05em 0.05em 0.05em;
+        }
     }
+
+// content = slogan + nav
 
     &-content{      
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-
     &-slogan{
         text-align: center;
         color: #4F412F;
         font-size: 2.5rem;
         font-family: 'Truculenta', sans-serif;
-        text-shadow: white 0.1em 0.1em 0.2em;
         margin: 1rem 0;
     }
+    &-nav{
+        margin: 1rem 0;
+        padding-bottom: 2px;        
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;        
+    }
+    
+//////////////////////// burger menu///////////////////////////
 
     &-button{
         height: 4rem;
@@ -61,7 +77,6 @@
         box-shadow: black 0.1em 0.1em 0.2em;
         z-index: 20;
         display: none;
-
     }
     &-burger{
         margin: 0.25rem 0;
@@ -71,8 +86,7 @@
         border-radius: 10px;
         transform-origin: 1px;
         transition: all 0.3s linear;
-        z-index: 20;
-        
+        z-index: 20;        
         &--open{
             &--1{
                 transform: translate(15%) rotate(45deg), ;
@@ -91,40 +105,38 @@
         }
     }   
 
-    &-nav{
-        margin: 1rem 0;
-        padding-bottom: 2px;        
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;        
+}
+
+// just for the fun 
+
+@media (prefers-reduced-motion: no-preference) {
+    .header-title {
+        animation: header-title-spin 1s ;
+    }
+    .header-title2 {
+        animation: header-title2-spin 1s;
     }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-.header-title {
-    animation: header-title-spin 1s ;
-}
-.header-title2 {
-    animation: header-title2-spin 1s;
-}
+@keyframes header-title-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(720deg);
+    }
 }
 
-@keyframes header-title-spin {
-from {
-    transform: rotate(0deg);
-}
-to {
-    transform: rotate(720deg);
-}
-}
 @keyframes header-title2-spin {
-from {
-    transform: rotate(0deg);
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-720deg);
+    }
 }
-to {
-    transform: rotate(-720deg);
-}
-}
+
+// Media Queries
 
 @media(max-width:976px){
     .header{
@@ -133,7 +145,7 @@ to {
         &-content{
             flex-wrap: nowrap;
             align-items: center;
-            margin: 0 1rem 0 0;
+           margin: 0 0.2rem;
         }
 
         &-slogan{

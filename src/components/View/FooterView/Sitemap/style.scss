@@ -24,5 +24,14 @@
     }
 }
 
+// Media Queries
+
+@media(max-width: 480px){
+    .sitemap{
+        &-link{
+            font-size: 1rem
+        }
+    }
+}
 
  

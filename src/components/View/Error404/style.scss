@@ -3,17 +3,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: space-around;
     &-img{
         width:60%;
         height: 80%;
         border-radius: 10%;
-    }
-    
+    }    
     &-message{
         font-size: 3em;
         font-weight: bold;
         font-family: 'Fredericka the Great', cursive;
+    }
+}
+
+// Media Queries
+
+@media (max-width: 480px){
+    .error{
+        &-img{
+            width: 100%;
+            height: 60%;
+        }
+        &-message{
+            font-size: 1.2rem;
+        }
     }
 }

@@ -24,11 +24,12 @@
         }
         
     }
-.active{
-    color: #C9EA44;
-}
+    .active{
+        color: #C9EA44;
+    }
 }
 
+// Media Queries
 
 @media(max-width:480px){
     .footer{

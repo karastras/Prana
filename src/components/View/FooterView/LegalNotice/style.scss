@@ -47,3 +47,30 @@
     }
 }
 
+// Media Queries
+
+@media(max-width: 480px){
+    .legal{
+        width: 100%;
+        &-head, &-foot{
+            margin: 0;
+        }
+        &-text{
+            font-size: 1rem;
+            margin: 1rem 0;
+        }
+        &-prevent{
+            margin: 0;
+            font-size: 0.58rem;
+            text-align: center;
+        }
+        &-carousel{
+            width: 100%;
+        }
+        &-img{
+            object-fit: cover;
+            height: auto;
+        }
+    }
+}
+
