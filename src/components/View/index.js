@@ -37,7 +37,7 @@ const View = () => {
     return (
         <div className="view">            
                 <Switch>
-                    {/* View from navbar */}
+                    {/* Navbar */}
                     <Route exact path='/' component={Home} />
                     <Route exact path='/service' render={(props) => (
                         <Service {...props} data={dataService} />
@@ -51,7 +51,7 @@ const View = () => {
                     )}/>
                     <Route exact path='/find-us' component={FindUs} />
 
-                    {/* View from Service component */}
+                    {/* Service components */}
                     <Route exact path='/epilation' component={Epilation} />
                     <Route exact path='/skinCare' component={SkinCare} />
                     <Route exact path='/bodyCare' component={BodyCare} />
@@ -59,7 +59,7 @@ const View = () => {
                         <Massage data={dataMassage} />
                         )}/>
 
-                    {/* View from Marks component */}
+                    {/* Marks components */}
                     {
                         dataMark.map((markObject)=>(
                           <Route key={markObject.id} exact path={markObject.path} render={() => (
@@ -68,12 +68,12 @@ const View = () => {
                         ))
                     }
 
-                    {/* View from Footer component */}
+                    {/* Footer components */}
                     <Route exact path='/contactez-nous' component={FindUs} />
                     <Route exact path='/legal-notice' component={LegalNotice} />
                     <Route exact path='/sitemap' component={Sitemap} />
 
-                    {/* View for Error404 */}
+                    {/* Error404 */}
                     <Route component={Error} />
                 </Switch>            
         </div>

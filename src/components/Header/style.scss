@@ -141,18 +141,15 @@
 @media(max-width:976px){
     .header{
         margin: 1rem 0;
-
         &-content{
             flex-wrap: nowrap;
             align-items: center;
            margin: 0 0.2rem;
         }
-
         &-slogan{
             width: 100%;
             font-size: 1.7rem;
         }
-
         &-button{
             display: flex;
             &--open{
@@ -165,8 +162,7 @@
             &--closed{
                 transition: all 0.4s linear;
                 transform: translateX(0%); 
-            }
-           
+            }           
         }
     }
 }
