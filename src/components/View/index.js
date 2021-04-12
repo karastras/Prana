@@ -27,7 +27,6 @@ import Error from './Error404';
 
 /* data */
 import dataService from '../../data/service';
-import dataMarks from '../../data/marks';
 import dataMark from '../../data/mark';
 import dataMassage from '../../data/massage';
 import dataOffers from '../../data/offers';
@@ -48,7 +47,7 @@ const View = () => {
                         <Offers data={dataOffers} />
                         )}/>
                     <Route exact path='/marks' render={() => (
-                        <Marks data={dataMarks} />
+                        <Marks data={dataMark} />
                     )}/>
                     <Route exact path='/find-us' component={FindUs} />
 

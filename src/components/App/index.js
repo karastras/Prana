@@ -16,16 +16,19 @@ const App = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-// function to open/close the buger menu
+// function to open/close the burger menu
   const [open, setOpen] = useState(false);
-    const toggle = () => {
+  const toggle = () => {
         setOpen(!open)
-    };    
+  };
+  const closed = () => {
+      setOpen(false);
+  };  
     return (
       <HelmetProvider>
         <div className={ open ? 'app--open ' : 'app' }>
             <div className="app-main">
-                <Header open={open} toggle={toggle} />
+                <Header open={open} toggle={toggle} closed={closed}/>
                 <View />
                 <Footer />
             </div>

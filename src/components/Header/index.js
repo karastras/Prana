@@ -5,14 +5,14 @@ import data from '../../data/datamenu';
 import './style.scss';
 
 
-const Header = ({open, toggle}) => {
+const Header = ({open, toggle, closed}) => {
     return(
         <div className="header">
             <div className='header-titles'>
                 <Link className="header-title" to="/">
                         Prana
                 </Link>                
-                <Link className="header-title2">
+                <Link className="header-title2" to="/">
                     Jardin du Corps
                 </Link>
             </div> 
@@ -31,7 +31,7 @@ const Header = ({open, toggle}) => {
                 </ button >
 {/* ____________________________________________________________________________________________________________________________________*/}
                 <div className="header-nav">
-                    <Nav open={open} toggle={toggle} list={data} />
+                    <Nav open={open} closed={closed} list={data} />
                 </div>
             </div>
         </div>

@@ -4,6 +4,8 @@ export default [
         id: 1,
         path: '/couleur-caramel',
         tagTitle: "Prana | Couleur Caramel",
+        img: "https://nsm09.casimages.com/img/2021/03/18//21031810380617254117321778.jpg",
+        alt: "logo de la marque Couleur Caramel",
         title1: "Couleur Caramel",
         title2: "La marque naturelle et bio de référence",
         text1: [            
@@ -17,14 +19,15 @@ export default [
                     "Respect des animaux : Couleur Caramel s’est engagée dès sa création à respecter la condition animale en ne réalisant aucun test cosmétique sur les animaux.",
                     "Respect de la qualtité : Innover en permanence grâce à notre laboratoire de Recherche & Développement qui conjugue les dernières méthodes de fabrication avec l’intelligence végétale.",                  
                 ],
-            url: 'https://www.couleur-caramel.com/',
-            link: "Site officiel de Couleur Caramel"
-        },
-
+        url: 'https://www.couleur-caramel.com/',
+        link: "Site officiel de Couleur Caramel"
+    },
     {
         id: 2,
         path: '/phyts',
         tagTitle: "Prana | Phyt's",
+        img: "https://nsm09.casimages.com/img/2021/03/18//21031810380717254117321780.jpg",
+        alt: "logo de la marque Phyt's",
         title1: "Phyt's",
         title2: "Phyt’s, la beauté bio sans compromis !",
         text1: [            
@@ -44,11 +47,12 @@ export default [
         url: 'https://www.phyts.com/',
         link: "Site officiel de Phyt's"
     },
-
     {
         id: 3,
         path: '/vitacology',
         tagTitle: "Prana | Vitacology",
+        img: "https://nsm09.casimages.com/img/2021/03/18//21031810380617254117321777.jpg",
+        alt: "logo de la marque Vitacology",
         title1: "Vitacology",
         title2: "La qualité de la cosmétique biologique pour la durabilité de notre vie écologique",
         text1: [
@@ -66,12 +70,13 @@ export default [
             ],
         url: 'http://www.vitacology.fr/',
         link: "Site officiel de Vitacology"
-    },
-    
+    },    
     {
         id: 4,
         path: '/peggy-sage',
         tagTitle: "Prana | Pegge Sage",
+        img: "https://nsm09.casimages.com/img/2021/03/18//21031810380717254117321779.jpg",
+        alt: "logo de la marque Peggy Sage",
         title1: "Peggy Sage",
         title2: "Une conception globale de la beauté",
         text1: [

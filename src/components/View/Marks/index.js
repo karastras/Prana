@@ -21,11 +21,11 @@ const Marks = ({data}) => {
                     data.map((markObject) => (                        
                         <Link className='marks-link' key={markObject.id} to={markObject.path}>
                             <Card className='marks-card' >
-                                <Card.Img className='marks-img' variant="top" src={markObject.url} alt={markObject.alt} />
+                                <Card.Img className='marks-img' variant="top" src={markObject.img} alt={markObject.alt} />
                                 <Card.Body className='marks-body'>
-                                    <Card.Title className='marks-titles' >{markObject.title}</Card.Title>
+                                    <Card.Title className='marks-titles' >{markObject.title1}</Card.Title>
                                     <Card.Text className='marks-text'>
-                                        {markObject.text}
+                                        {markObject.title2}
                                     </Card.Text>
                                         <button className='marks-button'>Consulter</button>
                                 </Card.Body>
