@@ -1,10 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import {Helmet} from 'react-helmet-async';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
 
 import './style.scss';
 
@@ -38,5 +37,17 @@ const Service = ({data}) => {
         </div>
     );
 };
+
+Service.propTypes = {
+    data: PropTypes.arrayOf(
+        PropTypes.shape({ 
+            id: PropTypes.number.isRequired,
+            path: PropTypes.string.isRequired,
+            url: PropTypes.string.isRequired,
+            alt: PropTypes.string.isRequired,
+            text: PropTypes.string.isRequired
+        })
+    )
+}
 
 export default Service;

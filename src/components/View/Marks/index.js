@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet-async';
 
 import Card from 'react-bootstrap/Card';
@@ -37,5 +38,18 @@ const Marks = ({data}) => {
         </div>
     );
 };
+
+Marks.propTypes = {
+    data: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            path: PropTypes.string.isRequired,
+            img: PropTypes.string.isRequired,
+            alt: PropTypes.string.isRequired,
+            title1: PropTypes.string.isRequired,
+            title2: PropTypes.string.isRequired
+        })
+    )
+}
 
 export default Marks;

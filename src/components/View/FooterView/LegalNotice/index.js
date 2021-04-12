@@ -17,8 +17,6 @@ import picture10 from '../../../../assets/prana09.JPG';
 
 import './style.scss';
 
-
-
 const LegalNotice = () => {
     return(
         <div className="legal">

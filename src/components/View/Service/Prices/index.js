@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
+
 import './style.scss';
 
 const Prices = ({label, time, price}) => {
@@ -10,5 +12,11 @@ const Prices = ({label, time, price}) => {
         </tr>
     )
 };
+
+Prices.propoTypes = {
+    label: PropTypes.string.isRequired,
+    time: PropTypes.number.isRequired,
+    price: PropTypes.number.isRequired
+}
 
 export default Prices;

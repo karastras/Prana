@@ -1,5 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import PropTypes from 'prop-types';
+
 import './style.scss';
 
 const Mark = ({
@@ -61,5 +63,17 @@ const Mark = ({
         </div>
     )
 };
+
+Mark.protoTypes = {
+    id: PropTypes.number.isRequired,
+    tagTitle: PropTypes.string.isRequired,
+    title1: PropTypes.string.isRequired,
+    title2: PropTypes.string.isRequired,
+    text1: PropTypes.string.isRequired,
+    text2: PropTypes.string.isRequired,
+    title3: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired
+}
 
 export default Mark;

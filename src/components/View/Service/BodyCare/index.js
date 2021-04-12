@@ -1,15 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Helmet} from 'react-helmet-async';
+import PropTypes from 'prop-types';
 
 import Prices from '../Prices';
-import list from '../../../../data/bodyCarePrice';
 
 import './style.scss';
 
-const BodyCare = () => {
-    const [opened, setOpened] = useState (false);
-    
-
+const BodyCare = ({ data, opened, isOpen }) => {
     return(        
         <div className='bodyCare'>
             <Helmet>
@@ -18,9 +15,7 @@ const BodyCare = () => {
             <img className='bodyCare-img'src="https://nsm09.casimages.com/img/2021/03/18//21031810380917254117321789.jpg" alt="tarifiaction des prestations sur les soins du corps" />
             <div className='bodyCare-link'>
                 <a href="#price-body">
-                    <button className='bodyCare-button' type='button' onClick={() => {
-                        setOpened(!opened);
-                    }} >
+                    <button className='bodyCare-button' type='button' onClick={isOpen} >
                         Cliquer pour afficher les tarifs
                     </button>
                 </a>
@@ -32,7 +27,7 @@ const BodyCare = () => {
                     </thead>
                     <tbody>
                         {
-                            list.map((priceObject) => (
+                            data.map((priceObject) => (
                                 <Prices key={priceObject.id} {...priceObject} />
                             ))
                         }
@@ -40,6 +35,16 @@ const BodyCare = () => {
                 </table>
             </div>               
         </div>
+    )
+}
+
+BodyCare.propTypes = {
+    opened: PropTypes.bool.isRequired,
+    isOpen: PropTypes.func.isRequired,
+    data: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+        })
     )
 }
 

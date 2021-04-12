@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState }  from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 /* import for navbar */
@@ -30,15 +30,29 @@ import dataService from '../../data/service';
 import dataMark from '../../data/mark';
 import dataMassage from '../../data/massage';
 import dataOffers from '../../data/offers';
+import dataHome from '../../data/carousel';
+import dataBody from '../../data/bodyCarePrice';
+import dataSkin from '../../data/skinCarePrice';
+import listWo from '../../data/epilationPriceWo';
+import listMen from '../../data/epilationPriceMen';
 
 import './style.scss';
 
 const View = () => {
+    const [opened, setOpened] = useState (false);
+    const isOpen = () => { setOpened(!opened)};
+    const [openedWo, setOpenedWo] = useState (false);
+    const isOpenWo = () => { setOpenedWo(!opened)};
+    const [openedMen, setOpenedMen] = useState (false);
+    const isOpenMen = () => { setOpenedMen(!opened)};
+
     return (
         <div className="view">            
                 <Switch>
                     {/* Navbar */}
-                    <Route exact path='/' component={Home} />
+                    <Route exact path='/' component={() => (
+                        <Home data={dataHome} />
+                        )}/>
                     <Route exact path='/service' render={(props) => (
                         <Service {...props} data={dataService} />
                     )}/>
@@ -52,9 +66,16 @@ const View = () => {
                     <Route exact path='/find-us' component={FindUs} />
 
                     {/* Service components */}
-                    <Route exact path='/epilation' component={Epilation} />
-                    <Route exact path='/skinCare' component={SkinCare} />
-                    <Route exact path='/bodyCare' component={BodyCare} />
+                    <Route exact path='/epilation' render={() => (
+                        <Epilation openedWo={ openedWo } isOpenWo={ isOpenWo } openedMen={ openedMen } isOpenMen={ isOpenMen }
+                        listWo={ listWo } listMen={ listMen } />
+                        )}/>
+                    <Route exact path='/skinCare' render={() => (
+                        <SkinCare data= {dataSkin} opened={opened} isOpen={isOpen} />
+                        )}/>
+                    <Route exact path='/bodyCare' render={() => (
+                        <BodyCare data= {dataBody} opened={opened} isOpen={isOpen} />
+                        )}/>
                     <Route exact path='/massage' render={() => (
                         <Massage data={dataMassage} />
                         )}/>

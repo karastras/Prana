@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import Nav from './Nav';
 import data from '../../data/datamenu';
-import './style.scss';
 
+import './style.scss';
 
 const Header = ({open, toggle, closed}) => {
     return(
@@ -38,5 +39,11 @@ const Header = ({open, toggle, closed}) => {
 
     );
 };
+
+Header.propTypes = {
+    open: PropTypes.bool.isRequired,
+    toggle: PropTypes.func.isRequired,
+    closed: PropTypes.func.isRequired
+}
 
 export default Header; 

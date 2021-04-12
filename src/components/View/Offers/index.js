@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet-async';
 
 import './style.scss';
 
-const Offers = ({data}) => {
+const Offers = ({ data }) => {
     return (
         <div className="offers">
             <Helmet>
@@ -40,5 +41,18 @@ const Offers = ({data}) => {
         </div>
     );
 };
+
+Offers.propTypes = {
+    data: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            url: PropTypes.string.isRequired,
+            alt: PropTypes.string.isRequired,
+            text: PropTypes.arrayOf(
+                    PropTypes.string.isRequired
+            )
+        })
+    )
+}
 
 export default Offers;

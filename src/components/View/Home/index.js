@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet-async';
 import Carousel from 'react-bootstrap/Carousel';
-import list from '../../../data/carousel';
 
 import './style.scss';
 
-const Home = () => {
+const Home = ({ data }) => {
     return (        
         <div className='home'>
             <Helmet>
@@ -23,7 +23,7 @@ const Home = () => {
                 <div className='home-content'>
                     <Carousel className='home-carousel' interval={null}>                    
                         {
-                            list.map((pictureObject) => (
+                            data.map((pictureObject) => (
                                 <Carousel.Item key={pictureObject.id}>
                                     <img
                                         className="home-img d-block w-100"
@@ -39,6 +39,16 @@ const Home = () => {
                 </div>
         </div>        
     );
+};
+
+Home.propTypes = {
+    data: PropTypes.arrayOf(
+        PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            url: PropTypes.string.isRequired,
+            alt: PropTypes.string.isRequired
+        }),
+    ).isRequired,
 };
 
 export default Home;
