@@ -28,23 +28,23 @@ const LegalNotice = () => {
                 <div className="legal-content">
                     <p className="legal-text" >
                         Avant tout merci d'avoir passé de votre temps à découvrir le site 🙏 et notamment cette page qui n'est en général pas des plus intéressante à consulter. 😬 <br/>
-                        Je vais essayer de faire au mieux pour rendre ce moment le moins désagréable possible. <br/>
+                        Je vais faire au mieux pour rendre ce moment le plus agréable possible. <br/>
                     </p>
                     <p className="legal-text">
                         Avant tout, les raisons de l'existence de ce site 🤔:
                     </p>
                     <p className="legal-text">
-                        Après un rendez-vous dans un institut esthétique à Rouffach en Alsace, j'ai consulté le site internet existant, développé avec le site <a target='_blank' rel='noreferrer' href="https://www.wix.com/">Wix</a>*.
-                        Le site présentait quelques bugs d'affichage, des liens non-fonctionnels, la partie responsive était de mauvaise qualité pour l'expérience utilisateur 📵
+                        Après un rendez-vous dans un institut d'esthétique à Rouffach en Alsace, j'ai consulté le site internet existant, développé avec le site <a target='_blank' rel='noreferrer' href="https://www.wix.com/">Wix</a>*.
+                        Celui-ci présentait quelques bugs d'affichage, des liens non-fonctionnels, la partie responsive était de mauvaise qualité pour l'expérience utilisateur 📵
                         et beaucoup de points de qualité web <a target='_blank' rel='noreferrer' href="https://directory.opquast.com/fr/certificat/Q1OE2V/">OPQUAST</a>* étaient non-respectés. <br/>
-                        Suite à une discussions avec la gérante de l'établissement, un contrat oral a été établit entre nous qui m’engageait à produire un site fonctionnel, similaire à celui existant sous un délai d’un mois et
-                        qui serait le point de départ d'ajouts de nouvelles fonctionnalités pour la suite. 🚀 <br/>
-                        Mais, par intérêt envers des services plus complets et plus adaptés à son activité, le projet a été annulé deux jours avant la date de livraison et
+                        Suite à une discussion avec la gérante de l'établissement, un contrat oral a été établi entre nous qui m’engageait à produire un site fonctionnel, graphiquement similaire à celui existant. Un délai d’un mois a été fixé et
+                        la nouvelle version serait le point de départ d'ajouts de nouvelles fonctionnalités pour la suite. 🚀 <br/>
+                        Mais, par intérêt envers des services plus complets et plus adaptés à son activité (logicel de paie, logiciel de caisse, site internet,...), le projet a été annulé deux jours avant la date de livraison et
                         n’a donc plus eu aucune utilité ou raison d’être. Avec un accord écrit de sa part j'ai pu conserver et utiliser le travail effectué à des fins professionnelles 
                         pour enrichir mon portefolio et pouvoir montrer mon savoir-faire sur un projet concret. 👨‍💻<br/>
                     </p>
                     <p className="legal-text">
-                        Vous trouverez dans le caroussel ci-dessous les captures d'écrans de l'ancien site en question qui m'ont servit de maquette pour mon travail.
+                        Vous trouverez dans le carrousel ci-dessous les captures d'écran de l'ancien site en question qui m'ont servi de maquette pour mon travail.
                     </p>
                 </div>
             </div>            
@@ -142,11 +142,11 @@ const LegalNotice = () => {
             </Carousel>
             <div className="legal-foot">
                 <p className="legal-text">
-                    Toutes les photos, images (hormis les plaquettes de tarifs) proviennent des banques d’images gratuites comme <a target='_blank' rel='noreferrer' href="https://pixabay.com/fr/">Pixabay</a>*, elles ne sont pas représentatives
+                    Toutes les photos, images (hormis les plaquettes de tarifs) proviennent de banques d’images gratuites comme <a target='_blank' rel='noreferrer' href="https://pixabay.com/fr/">Pixabay</a>*, elles ne sont pas représentatives
                     de la réalité des produits et de l'institut. Les offres présentes dans la section "<Link className="legal-link" to="/offers" >Offres</Link>" ne sont là qu’à titre d’exemple.<br/>                    
-                    Le site a été entièrement développé sous <a target='_blank' rel='noreferrer' href="https://fr.reactjs.org/">REACT</a> v.17 en partant du <a target='_blank' rel='noreferrer' href="https://create-react-app.dev/docs/getting-started/">create-react-app</a>. Seul Bootstrap a été utlisé pour le "Carousel" et certaines "Cards". <br/>
-                    Il respecte au mieux les normes établies par <a target='_blank' rel='noreferrer' href="https://directory.opquast.com/fr/certificat/Q1OE2V/">OPQUAST</a>*, notamment l'accessibilité aux personnes en situtation de handicap. Le code source de ce site est la propriété
-                    de Mr Burrus Jérôme 8, rue des Récollets 68250 Rouffach et exclus tous droits d'utilisation ou de reproduction sans son accord.
+                    Le site a été entièrement développé sous <a target='_blank' rel='noreferrer' href="https://fr.reactjs.org/">REACT</a> v.17 en partant du <a target='_blank' rel='noreferrer' href="https://create-react-app.dev/docs/getting-started/">create-react-app</a>. Seul Bootstrap a été utilisé pour le "Carousel" et certaines "Cards". <br/>
+                    Il respecte au mieux les normes établies par <a target='_blank' rel='noreferrer' href="https://directory.opquast.com/fr/certificat/Q1OE2V/">OPQUAST</a>*, notamment l'accessibilité aux personnes en situation de handicap. Le code source de ce site est la propriété
+                    de Mr Burrus Jérôme 8, rue des Récollets 68250 Rouffach-France et exclut tous droits d'utilisation ou de reproduction sans son accord.
                 </p>
                 <p className="legal-text">
                     Pour toutes demandes, suggestions,... vous pouvez adresser directement un mail à <a href="mailto:burrusjerome@gmail.com">burrusjerome@gmail.com</a> . <br/>
@@ -162,4 +162,4 @@ const LegalNotice = () => {
     );
 };
 
-export default LegalNotice; 
+export default LegalNotice;
