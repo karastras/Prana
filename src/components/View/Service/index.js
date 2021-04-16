@@ -18,7 +18,7 @@ const Service = ({data}) => {
             </h2>
             <div className='service-content'>
                 {
-                    data.map((cardObject)=>(                        
+                    data.service.map((cardObject)=>(                        
                         <Link key={cardObject.id} className='service-link' to={cardObject.path}>
                             <Card className='service-card' >
                                 <Card.Img className='service-img' variant="top" src={cardObject.url} alt={cardObject.alt} />

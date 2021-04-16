@@ -26,7 +26,7 @@ const SkinCare = ({ data, opened, isOpen }) => {
                     </thead>
                     <tbody>
                         {
-                        data.map((priceObject) => (
+                        data.skinPrice.map((priceObject) => (
                             <Prices key={priceObject.id} {...priceObject} />
                             ))
                         }

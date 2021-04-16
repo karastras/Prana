@@ -27,7 +27,7 @@ const BodyCare = ({ data, opened, isOpen }) => {
                     </thead>
                     <tbody>
                         {
-                            data.map((priceObject) => (
+                            data.bodyPrice.map((priceObject) => (
                                 <Prices key={priceObject.id} {...priceObject} />
                             ))
                         }

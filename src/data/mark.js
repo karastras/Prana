@@ -11,14 +11,14 @@ export default [
         text1: [            
                     'Couleur Caramel est une marque de la société Nature cos.',
                     'Nous partageons des valeurs fortes fondées sur le développement durable car il nous semble être une évidence pour réussir et construire un avenir intelligent fait d’équilibres. La charte Couleur Caramel pour un développement durable réclame un engagement avec soi-même. Il s’agit d’un engagement responsable et réalisable, une vision du monde d’aujourd’hui qui influence positivement le monde de demain, en d’autres mots un appel au bon sens.'
-        ],
+            ],
             title3: "Les 4 respects:",
-            text2: [               
-                    "Respect de l'environnement : En utilisant des ingrédients issus de l’agriculture biologique chaque fois que possible. Prioriser l’Eco-conception des produits, des packagings et présentoirs.",
-                    "Respect de nos clients : Une qualité professionnelle et des produits avec un dosage pigmentaire répondant à toutes les exigences techniques des professionnels.",
-                    "Respect des animaux : Couleur Caramel s’est engagée dès sa création à respecter la condition animale en ne réalisant aucun test cosmétique sur les animaux.",
-                    "Respect de la qualtité : Innover en permanence grâce à notre laboratoire de Recherche & Développement qui conjugue les dernières méthodes de fabrication avec l’intelligence végétale.",                  
-                ],
+        text2: [               
+                "Respect de l'environnement : En utilisant des ingrédients issus de l’agriculture biologique chaque fois que possible. Prioriser l’Eco-conception des produits, des packagings et présentoirs.",
+                "Respect de nos clients : Une qualité professionnelle et des produits avec un dosage pigmentaire répondant à toutes les exigences techniques des professionnels.",
+                "Respect des animaux : Couleur Caramel s’est engagée dès sa création à respecter la condition animale en ne réalisant aucun test cosmétique sur les animaux.",
+                "Respect de la qualtité : Innover en permanence grâce à notre laboratoire de Recherche & Développement qui conjugue les dernières méthodes de fabrication avec l’intelligence végétale.",                  
+            ],
         url: 'https://www.couleur-caramel.com/',
         link: "Site officiel de Couleur Caramel"
     },

@@ -11,7 +11,7 @@ const Massage = ({data}) => {
                 <title>Prana | Massage</title>
             </Helmet>
                 {
-                    data.map((dataObject) => {
+                    data.massage.map((dataObject) => {
                         return (
                             <div className='massage-pregnant' key={ dataObject.id } >
                                 <img className='massage-img' src={dataObject.url} alt={dataObject.alt} />

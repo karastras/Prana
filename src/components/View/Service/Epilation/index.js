@@ -11,8 +11,7 @@ const Epilation = ({
     isOpenWo,
     openedMen,
     isOpenMen,
-    listWo,
-    listMen
+    list,
     }) => {
         return(
             <div className='epilation'>
@@ -37,7 +36,7 @@ const Epilation = ({
                             </thead>
                             <tbody>
                                 {
-                                listWo.map((priceObject) => (
+                                list.epilWo.map((priceObject) => (
                                     <Prices key={priceObject.id} {...priceObject} />
                                     ))
                                 }
@@ -77,7 +76,7 @@ const Epilation = ({
                             </thead>
                             <tbody>
                                 {
-                                    listMen.map((priceObject) => (
+                                    list.epilMen.map((priceObject) => (
                                         <Prices key={priceObject.id} {...priceObject} />
                                     ))
                                 }

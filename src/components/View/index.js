@@ -28,13 +28,9 @@ import Error from './Error404';
 /* data */
 import dataService from '../../data/service';
 import dataMark from '../../data/mark';
-import dataMassage from '../../data/massage';
 import dataOffers from '../../data/offers';
 import dataHome from '../../data/carousel';
-import dataBody from '../../data/bodyCarePrice';
-import dataSkin from '../../data/skinCarePrice';
-import listWo from '../../data/epilationPriceWo';
-import listMen from '../../data/epilationPriceMen';
+import dataPrice from '../../data/servicePrices';
 
 import './style.scss';
 
@@ -53,31 +49,31 @@ const View = () => {
                     <Route exact path='/' component={() => (
                         <Home data={dataHome} />
                         )}/>
-                    <Route exact path='/service' render={(props) => (
+                    <Route  path='/service' render={(props) => (
                         <Service {...props} data={dataService} />
                     )}/>
-                    <Route exact path='/philosophy' component={Philosophy} />
-                    <Route exact path='/offers' render={() => (
+                    <Route  path='/philosophy' component={Philosophy} />
+                    <Route  path='/offers' render={() => (
                         <Offers data={dataOffers} />
                         )}/>
-                    <Route exact path='/marks' render={() => (
+                    <Route path='/marks' render={() => (
                         <Marks data={dataMark} />
                     )}/>
-                    <Route exact path='/find-us' component={FindUs} />
+                    <Route path='/find-us' component={FindUs} />
 
                     {/* Service components */}
-                    <Route exact path='/epilation' render={() => (
+                    <Route path='/epilation' render={() => (
                         <Epilation openedWo={ openedWo } isOpenWo={ isOpenWo } openedMen={ openedMen } isOpenMen={ isOpenMen }
-                        listWo={ listWo } listMen={ listMen } />
+                        list={ dataPrice } />
                         )}/>
-                    <Route exact path='/skinCare' render={() => (
-                        <SkinCare data= {dataSkin} opened={opened} isOpen={isOpen} />
+                    <Route path='/skinCare' render={() => (
+                        <SkinCare data= {dataPrice} opened={opened} isOpen={isOpen} />
                         )}/>
-                    <Route exact path='/bodyCare' render={() => (
-                        <BodyCare data= {dataBody} opened={opened} isOpen={isOpen} />
+                    <Route path='/bodyCare' render={() => (
+                        <BodyCare data= {dataPrice} opened={opened} isOpen={isOpen} />
                         )}/>
-                    <Route exact path='/massage' render={() => (
-                        <Massage data={dataMassage} />
+                    <Route path='/massage' render={() => (
+                        <Massage data={dataService} />
                         )}/>
 
                     {/* Marks components */}
@@ -90,9 +86,9 @@ const View = () => {
                     }
 
                     {/* Footer components */}
-                    <Route exact path='/contactez-nous' component={FindUs} />
-                    <Route exact path='/legal-notice' component={LegalNotice} />
-                    <Route exact path='/sitemap' component={Sitemap} />
+                    <Route path='/contact-us' component={FindUs} />
+                    <Route path='/legal-notice' component={LegalNotice} />
+                    <Route path='/sitemap' component={Sitemap} />
 
                     {/* Error404 */}
                     <Route component={Error} />

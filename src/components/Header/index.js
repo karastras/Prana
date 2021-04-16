@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import Nav from './Nav';
-import data from '../../data/datamenu';
+import data from '../../data/menu';
 
 import './style.scss';
 
