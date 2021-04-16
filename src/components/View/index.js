@@ -28,7 +28,7 @@ import Error from './Error404';
 /* data */
 import dataService from '../../data/service';
 import dataMark from '../../data/mark';
-import dataOffers from '../../data/offers';
+import dataOffer from '../../data/offers';
 import dataHome from '../../data/carousel';
 import dataPrice from '../../data/servicePrices';
 
@@ -54,7 +54,7 @@ const View = () => {
                     )}/>
                     <Route  path='/philosophy' component={Philosophy} />
                     <Route  path='/offers' render={() => (
-                        <Offers data={dataOffers} />
+                        <Offers data={dataOffer} />
                         )}/>
                     <Route path='/marks' render={() => (
                         <Marks data={dataMark} />

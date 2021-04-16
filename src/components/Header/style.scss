@@ -59,7 +59,7 @@
         align-items: flex-end;        
     }
     
-//////////////////////// burger menu///////////////////////////
+//////////////////////// burger button///////////////////////////
 
     &-button{
         height: 4rem;
@@ -118,7 +118,6 @@
         animation: header-title2-spin 1s;
     }
 }
-
 @keyframes header-title-spin {
     from {
         transform: rotate(0deg);
@@ -127,7 +126,6 @@
         transform: rotate(720deg);
     }
 }
-
 @keyframes header-title2-spin {
     from {
         transform: rotate(0deg);

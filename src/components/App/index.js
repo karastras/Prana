@@ -16,11 +16,13 @@ const App = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-// function to open/close the burger menu
+// function to toggle between open/close the burger menu
   const [open, setOpen] = useState(false);
   const toggle = () => {
         setOpen(!open)
   };
+
+// function to close the burger menu when click on link
   const closed = () => {
       setOpen(false);
   };  

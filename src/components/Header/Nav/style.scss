@@ -29,6 +29,7 @@
 @media (max-width: 976px) {
     .nav{
         &-list{
+            // burger menu
             &--open, &--closed{
                 display: flex;
                 flex-flow: column nowrap;
