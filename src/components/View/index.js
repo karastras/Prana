@@ -49,30 +49,30 @@ const View = () => {
                     <Route exact path='/' component={() => (
                         <Home data={dataHome} />
                         )}/>
-                    <Route  path='/service' render={(props) => (
+                    <Route exact path='/service' render={(props) => (
                         <Service {...props} data={dataService} />
                     )}/>
-                    <Route  path='/philosophy' component={Philosophy} />
-                    <Route  path='/offers' render={() => (
+                    <Route exact path='/philosophy' component={Philosophy} />
+                    <Route exact path='/offers' render={() => (
                         <Offers data={dataOffer} />
                         )}/>
-                    <Route path='/marks' render={() => (
+                    <Route exact path='/marks' render={() => (
                         <Marks data={dataMark} />
                     )}/>
-                    <Route path='/find-us' component={FindUs} />
+                    <Route exact path='/find-us' component={FindUs} />
 
                     {/* Service components */}
-                    <Route path='/epilation' render={() => (
+                    <Route exact path='/epilation' render={() => (
                         <Epilation openedWo={ openedWo } isOpenWo={ isOpenWo } openedMen={ openedMen } isOpenMen={ isOpenMen }
                         list={ dataPrice } />
                         )}/>
-                    <Route path='/skinCare' render={() => (
+                    <Route exact path='/skinCare' render={() => (
                         <SkinCare data= {dataPrice} opened={opened} isOpen={isOpen} />
                         )}/>
-                    <Route path='/bodyCare' render={() => (
+                    <Route exact path='/bodyCare' render={() => (
                         <BodyCare data= {dataPrice} opened={opened} isOpen={isOpen} />
                         )}/>
-                    <Route path='/massage' render={() => (
+                    <Route exact path='/massage' render={() => (
                         <Massage data={dataService} />
                         )}/>
 
@@ -86,9 +86,9 @@ const View = () => {
                     }
 
                     {/* Footer components */}
-                    <Route path='/contact-us' component={FindUs} />
-                    <Route path='/legal-notice' component={LegalNotice} />
-                    <Route path='/sitemap' component={Sitemap} />
+                    <Route exact path='/contact-us' component={FindUs} />
+                    <Route exact path='/legal-notice' component={LegalNotice} />
+                    <Route exact path='/sitemap' component={Sitemap} />
 
                     {/* Error404 */}
                     <Route component={Error} />

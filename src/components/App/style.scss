@@ -9,7 +9,7 @@
         flex-direction: column;
         margin: 0 10%;
     }
-    // if burger opened, background can't be scrolled
+    // burger open = stop scrolled background
     &--open{
         position: fixed;
     }

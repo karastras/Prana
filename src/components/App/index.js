@@ -28,6 +28,7 @@ const App = () => {
   };  
     return (
       <HelmetProvider>
+              {/* burger open = stop scrolled background */}
         <div className={ open ? 'app--open ' : 'app' }>
             <div className="app-main">
                 <Header open={open} toggle={toggle} closed={closed}/>
