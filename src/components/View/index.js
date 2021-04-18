@@ -1,7 +1,7 @@
 import React, { useState }  from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-/* import for navbar */
+// import for navbar 
 import Service from './Service';
 import Home from './Home';
 import Philosophy from './Philosophy';
@@ -9,13 +9,13 @@ import Offers from './Offers';
 import Marks from './Marks';
 import FindUs from './FindUs';
 
-/* import from Service component */
+// import from Service component
 import Epilation from './Service/Epilation';
 import SkinCare from './Service/SkinCare';
 import BodyCare from './Service/BodyCare';
 import Massage from './Service/Massage';
 
-/* import from Marks component */
+// import from Marks component
 import Mark from './Marks/Mark';
 
 /* import for Footer */
@@ -25,7 +25,7 @@ import Sitemap from './FooterView/Sitemap';
 /* View for Error404 */
 import Error from './Error404';
 
-/* data */
+// data
 import dataService from '../../data/service';
 import dataMark from '../../data/mark';
 import dataOffer from '../../data/offers';

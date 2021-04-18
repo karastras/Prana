@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet-async';
 
 import "./style.scss";
 
-
 const Error = () => {
     return (
         <div className='error'>

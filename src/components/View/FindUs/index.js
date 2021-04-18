@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet-async';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
-
 import './style.scss';
 
 const FindUs = () => {

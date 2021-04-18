@@ -1,7 +1,7 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Carousel from 'react-bootstrap/Carousel';
-import {Link} from 'react-router-dom';
 
 // pictures carousel
 import picture01 from '../../../../assets/prana01.JPG';
