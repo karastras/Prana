@@ -1,10 +1,11 @@
 import React from 'react';
-import {Helmet} from 'react-helmet-async';
+import { HashLink as Link } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
+import {Helmet} from 'react-helmet-async';
 
-import { motion } from "framer-motion";
 import Prices from '../Prices';
 
+import { motion } from "framer-motion";
 import './style.scss';
 
 const BodyCare = ({ data, opened, isOpen, pageVariants, pageTransition }) => {
@@ -15,11 +16,11 @@ const BodyCare = ({ data, opened, isOpen, pageVariants, pageTransition }) => {
             </Helmet>          
             <img className='bodyCare-img'src="https://nsm09.casimages.com/img/2021/03/18//21031810380917254117321789.jpg" alt="tarifiaction des prestations sur les soins du corps" />
             <div className='bodyCare-link'>
-                <a href="#price-body">
+                <Link smooth to="#price-body">
                     <button className='bodyCare-button' type='button' onClick={isOpen} >
                         Cliquer pour afficher les tarifs
                     </button>
-                </a>
+                </Link>
                 <table id="price-body" className={ opened ? 'bodyCare-price' : 'bodyCare-price-closed'}>
                     <thead>
                         <tr>

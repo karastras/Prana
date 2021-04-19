@@ -1,6 +1,8 @@
 import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet-async';
+
 import Prices from '../Prices';
 
 import { motion } from "framer-motion";
@@ -14,11 +16,11 @@ const SkinCare = ({ data, opened, isOpen, pageVariants, pageTransition }) => {
             </Helmet>
             <img className='skinCare-img'src="https://nsm09.casimages.com/img/2021/03/18//21031810380917254117321788.jpg" alt="tarifiaction des prestations sur les soins de la peau" />            
             <div className='skinCare-link'>
-                <a href="#price-skin">
+                <Link smooth to="#price-skin">
                     <button className='skinCare-button' type='button' onClick={ isOpen } >
                         Cliquer pour afficher les tarifs
                     </button>
-                </a>
+                </Link>
                 <table id="price-skin" className={ opened ? 'skinCare-price' : 'skinCare-price-closed'}>
                     <thead>
                         <tr>
