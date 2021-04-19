@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import PropTypes from 'prop-types';
 
+import { motion } from "framer-motion";
 import './style.scss';
 
 const Mark = ({
@@ -13,11 +14,13 @@ const Mark = ({
     text2,
     title3,
     url,
-    link
+    link,
+    pageVariants,
+    pageTransition
     }) => {
         return(
 //className='mark' do some conflicts in css with Bootstrap and others, so i use 'label'
-            <div key={id} className='label'>                    
+            <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition} key={id} className='label'>                    
                 <Helmet>
                     <title>{tagTitle}</title>
                 </Helmet>
@@ -60,7 +63,7 @@ const Mark = ({
                         (En cliquant sur le lien vous allez être dirigé sur une page externe à notre site)
                     </span>
                 </div>
-            </div>
+            </motion.div>
     )
 };
 

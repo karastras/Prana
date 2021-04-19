@@ -4,11 +4,12 @@ import { Helmet } from 'react-helmet-async';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
+import { motion } from "framer-motion";
 import './style.scss';
 
-const FindUs = () => {
+const FindUs = ({ pageVariants, pageTransition }) => {
     return (
-        <div className='findUs'>
+        <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition} className='findUs'>
             <Helmet>
                 <title>Prana | Nous trouver</title>
             </Helmet>
@@ -60,7 +61,7 @@ const FindUs = () => {
                     width="600" height="500" loading="lazy"></iframe>
                 </div>
             </div>                        
-        </div>
+        </motion.div>
     );
 };
 

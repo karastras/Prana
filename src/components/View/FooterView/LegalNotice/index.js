@@ -15,11 +15,12 @@ import picture08 from '../../../../assets/prana07.JPG';
 import picture09 from '../../../../assets/prana08.JPG';
 import picture10 from '../../../../assets/prana09.JPG';
 
+import { motion } from "framer-motion";
 import './style.scss';
 
-const LegalNotice = () => {
+const LegalNotice = ({pageVariants, pageTransition}) => {
     return(
-        <div className="legal">
+        <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition} className="legal">
             <Helmet>
                 <title>Prana | Mentions légales</title>
             </Helmet>
@@ -158,7 +159,7 @@ const LegalNotice = () => {
                     (* En cliquant sur les liens ci-dessus vous allez être dirigé vers une page externe au site)
                 </p>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

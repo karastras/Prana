@@ -2,11 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
+import { motion } from "framer-motion";
 import './style.scss';
 
-const Sitemap = () => {
+const Sitemap = ({ pageVariants, pageTransition }) => {
     return(
-        <div className='sitemap'>
+        <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition} className='sitemap'>
             <Helmet>
                 <title>Prana | Plan du site</title>
             </Helmet>
@@ -101,7 +102,7 @@ const Sitemap = () => {
                     </Link>
                 </li>
             </ul>
-        </div>
+        </motion.div>
     )
 };
 

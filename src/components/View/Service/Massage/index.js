@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet-async';
 
+import { motion } from "framer-motion";
 import './style.scss';
 
-const Massage = ({data}) => {
+const Massage = ({data, pageVariants, pageTransition}) => {
     return(
-        <div className='massage'>
+        <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition} className='massage'>
             <Helmet>
                 <title>Prana | Massage</title>
             </Helmet>
@@ -26,7 +27,7 @@ const Massage = ({data}) => {
                             </div>
                     );})
                 }            
-        </div>
+        </motion.div>
     )
 }
 

@@ -5,11 +5,12 @@ import {Helmet} from 'react-helmet-async';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import { motion } from "framer-motion";
 import './style.scss';
 
-const Service = ({data}) => {
+const Service = ({data, pageVariants, pageTransition}) => {
     return (
-        <div className="service">
+        <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition} className="service">
             <Helmet>
                 <title>Prana | Prestations</title>
             </Helmet>
@@ -34,20 +35,22 @@ const Service = ({data}) => {
                     ))
                 }                
             </div>            
-        </div>
+        </motion.div>
     );
 };
 
 Service.propTypes = {
-    data: PropTypes.arrayOf(
-        PropTypes.shape({ 
-            id: PropTypes.number.isRequired,
-            path: PropTypes.string.isRequired,
-            url: PropTypes.string.isRequired,
-            alt: PropTypes.string.isRequired,
-            text: PropTypes.string.isRequired
-        })
-    )
+    data: PropTypes.shape({ 
+        service: PropTypes.arrayOf(
+            PropTypes.shape({
+                id: PropTypes.number.isRequired,
+                path: PropTypes.string.isRequired,
+                url: PropTypes.string.isRequired,
+                alt: PropTypes.string.isRequired,
+                text: PropTypes.string.isRequired
+            })
+        )
+    })
 }
 
 export default Service;

@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet-async';
 import Prices from '../Prices';
 
+import { motion } from "framer-motion";
 import './style.scss';
 
-const SkinCare = ({ data, opened, isOpen }) => {
+const SkinCare = ({ data, opened, isOpen, pageVariants, pageTransition }) => {
     return(        
-        <div className='skinCare'>
+        <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition} className='skinCare'>
             <Helmet>
                 <title>Prana | Soin de la peau</title>
             </Helmet>
@@ -33,17 +34,19 @@ const SkinCare = ({ data, opened, isOpen }) => {
                     </tbody>
                 </table>
             </div>               
-        </div>
+        </motion.div>
     )
 }
 
 SkinCare.propTypes = {
     opened: PropTypes.bool.isRequired,
     isOpen: PropTypes.func.isRequired,
-    data: PropTypes.arrayOf(
-        PropTypes.shape({
+    data: PropTypes.shape({ 
+        skinPrice: PropTypes.arrayOf(
+            PropTypes.shape({
             id: PropTypes.number.isRequired,
-        })
-    )
+            })
+        )
+    })
 }
 export default SkinCare;

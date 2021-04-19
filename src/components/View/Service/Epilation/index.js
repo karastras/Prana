@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 
 import Prices from '../Prices';
 
+import { motion } from "framer-motion";
 import './style.scss';
 
 const Epilation = ({
@@ -12,9 +13,11 @@ const Epilation = ({
     openedMen,
     isOpenMen,
     list,
+    pageVariants,
+    pageTransition
     }) => {
         return(
-            <div className='epilation'>
+            <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition} className='epilation'>
                 <Helmet>
                     <title>Prana | Epilation</title>
                 </Helmet>
@@ -100,7 +103,7 @@ const Epilation = ({
                     </div> 
                 </div>
 
-            </div>
+            </motion.div>
         );
 };
 

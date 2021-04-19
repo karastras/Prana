@@ -6,11 +6,12 @@ import { Helmet } from 'react-helmet-async';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import { motion } from "framer-motion";
 import './style.scss';
 
-const Marks = ({data}) => {
+const Marks = ({data, pageVariants, pageTransition}) => {
     return (        
-        <div className='marks'>
+        <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition} className='marks'>
             <Helmet>
                 <title>Prana | Nos marques</title>
             </Helmet>
@@ -35,7 +36,7 @@ const Marks = ({data}) => {
                     ))
                 }                
             </div>
-        </div>
+        </motion.div>
     );
 };
 

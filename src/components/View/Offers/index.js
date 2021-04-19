@@ -2,11 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet-async';
 
+import { motion } from "framer-motion";
 import './style.scss';
 
-const Offers = ({ data }) => {
+const Offers = ({ data, pageVariants, pageTransition }) => {
     return (
-        <div className="offers">
+        <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition} className="offers">
             <Helmet>
                 <title>Prana | Nos offres</title>
             </Helmet>
@@ -38,7 +39,7 @@ const Offers = ({ data }) => {
                     ))
                 }
             </div>
-        </div>
+        </motion.div>
     );
 };
 

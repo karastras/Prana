@@ -2,6 +2,9 @@
     flex: 1;
     display: flex;
     margin: 0.5rem 2rem 2rem 2rem;
+    // Pages slides transitions causes issue with viewport so =
+    overflow-x: hidden;
+    position: relative;
 }
 
 // Media Queries

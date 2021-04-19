@@ -2,13 +2,14 @@ import React from 'react';
 import {Helmet} from 'react-helmet-async';
 import PropTypes from 'prop-types';
 
+import { motion } from "framer-motion";
 import Prices from '../Prices';
 
 import './style.scss';
 
-const BodyCare = ({ data, opened, isOpen }) => {
+const BodyCare = ({ data, opened, isOpen, pageVariants, pageTransition }) => {
     return(        
-        <div className='bodyCare'>
+        <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition} className='bodyCare'>
             <Helmet>
                 <title>Prana | Soin du corps</title>
             </Helmet>          
@@ -34,18 +35,20 @@ const BodyCare = ({ data, opened, isOpen }) => {
                     </tbody>
                 </table>
             </div>               
-        </div>
+        </motion.div>
     )
 }
 
 BodyCare.propTypes = {
     opened: PropTypes.bool.isRequired,
     isOpen: PropTypes.func.isRequired,
-    data: PropTypes.arrayOf(
-        PropTypes.shape({
+    data: PropTypes.shape({ 
+        bodyPrice: PropTypes.arrayOf(
+            PropTypes.shape({
             id: PropTypes.number.isRequired,
-        })
-    )
+            })
+        )
+    })
 }
 
 export default BodyCare;

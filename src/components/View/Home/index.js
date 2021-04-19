@@ -4,11 +4,12 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet-async';
 import Carousel from 'react-bootstrap/Carousel';
 
+import { motion } from "framer-motion";
 import './style.scss';
 
-const Home = ({ data }) => {
+const Home = ({ data, pageVariants, pageTransition }) => {
     return (        
-        <div className='home'>
+        <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition} className='home'>
             <Helmet>
                 <title>Prana | Acceuil</title>
             </Helmet>
@@ -37,7 +38,7 @@ const Home = ({ data }) => {
                         }
                     </Carousel>
                 </div>
-        </div>        
+        </motion.div>        
     );
 };
 

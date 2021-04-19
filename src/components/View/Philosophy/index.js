@@ -1,11 +1,12 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
+import { motion } from "framer-motion";
 import './style.scss';
 
-const Philosophy = () => {
+const Philosophy = ({pageVariants, pageTransition}) => {
     return (
-        <div className='philosophy'>
+        <motion.div initial="initial" animate="in" exit="out" variants={pageVariants} transition={pageTransition} className='philosophy'>
             <Helmet>
                 <title>Prana | Philosiphie</title>
             </Helmet>
@@ -39,7 +40,7 @@ const Philosophy = () => {
                 </div>
             </div>
 
-        </div>
+        </motion.div>
     );
 };
 
