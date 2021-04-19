@@ -84,6 +84,7 @@
 
 @media(max-width:480px){
     .home{
+        justify-content: start;
         margin: 4rem 0;
             &-carousel{
                 width: 100%; 

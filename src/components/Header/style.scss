@@ -1,13 +1,14 @@
 .header{
     margin: 1rem 3rem;
-
-// titles = title + tilte2
-
+    
+    // titles = title + tilte2
+    
     &-titles{
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        margin-bottom: 0.7rem;        
+        margin-bottom: 0.7rem;
+        white-space: nowrap;        
     }    
     &-title{
         color: #4F412F; 
@@ -28,17 +29,20 @@
         font-size: 3.5em;
         font-family: 'Truculenta', sans-serif;
         color: #434E16;
-        margin-bottom: 3px;
+        margin-bottom: 7px;
+        // titles animation
+        animation: slidein 3s ;
+        ////////////////////////
         transition: text-shadow 0.5s;
         &:hover{
             color: #434E16;
             text-decoration: none;
             text-shadow: white 0.05em 0.05em 0.05em;
         }
-    }
-
-// content = slogan + nav
-
+    } 
+    
+    // content = slogan + nav
+    
     &-content{      
         display: flex;
         flex-wrap: wrap;
@@ -59,8 +63,8 @@
         align-items: flex-end;        
     }
     
-//////////////////////// burger button///////////////////////////
-
+    //////////////////////// burger button///////////////////////////
+    
     &-button{
         height: 4rem;
         width: 5rem;
@@ -105,35 +109,46 @@
             }          
         }
     }   
+    //animation on titles
+    @keyframes slidein {
+        0% { margin-top:150px;
+            margin-left: -700px;}
+        30% { margin-top:150px;
+            margin-left: -700px; }
+        // 40% { margin-left: -700px;}
+        // 60% { margin-left: -100px; }
+        100% { margin-top:0px;
+            margin-left: 0px; }
+    }
+}
 
-}
 
-// just for the fun 
+// for the fun 
 
-@media (prefers-reduced-motion: no-preference) {
-    .header-title {
-        animation: header-title-spin 1s ;
-    }
-    .header-title2 {
-        animation: header-title2-spin 1s;
-    }
-}
-@keyframes header-title-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(720deg);
-    }
-}
-@keyframes header-title2-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(-720deg);
-    }
-}
+// @media (prefers-reduced-motion: no-preference) {
+//     .header-title {
+//         animation: header-title-spin 1s ;
+//     }
+//     .header-title2 {
+//         animation: header-title2-spin 1s;
+//     }
+// }
+// @keyframes header-title-spin {
+//     from {
+//         transform: rotate(0deg);
+//     }
+//     to {
+//         transform: rotate(720deg);
+//     }
+// }
+// @keyframes header-title2-spin {
+//     from {
+//         transform: rotate(0deg);
+//     }
+//     to {
+//         transform: rotate(-720deg);
+//     }
+// }
 
 // Media Queries
 
@@ -147,7 +162,7 @@
         }
         &-slogan{
             width: 100%;
-            font-size: 1.7rem;
+            margin-left: 80px;           
         }
         &-button{
             display: flex;
@@ -169,29 +184,59 @@
 @media(max-width:600px){
     .header{
         &-title{
-            font-size: 2.2rem;
+            font-size: 3.5rem;
             margin-right: -1rem;
         }
         &-title2{
-            font-size: 1.6rem;
+            margin-bottom: 3px;
+            font-size: 2.7rem;
         }
         &-slogan{
-            font-size: 1.2rem;
+            font-size: 2rem;
+            margin-left: 0px;
         }
+    }
+    @keyframes slidein {
+        0% { margin-top:100px;
+            margin-left: -300px;}
+        30% { margin-top:100px;
+            margin-left: -300px; }
+        // 40% { margin-left: -700px;}
+        // 60% { margin-left: -100px; }
+        100% { margin-top:0px; }
     }
 }
 
 @media(max-width:480px){
     .header{
         &-title{
+            font-size: 2.7rem;
             &:hover {                
                 text-shadow: inherit; // remove :hover on touch devices
             }
         }
         &-title2{
+            font-size: 1.6rem;
+            margin-bottom: 7px;
             &:hover {                
                 text-shadow: inherit; // remove :hover on touch devices
             }
+        }
+        &-slogan{
+            font-size: 1.5rem;
+        }
+    }
+}
+@media(max-width:350px){
+    .header{
+        &-title{
+            font-size: 2.2rem;
+        }
+        &-title2{
+            font-size: 1.6rem;
+        }
+        &-slogan{
+            font-size: 1.2rem;
         }
     }
 }

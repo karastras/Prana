@@ -69,12 +69,12 @@ const View = () => {
 
     return (
         <div className="view">
-            {/* Delete "exitBeforeEnter" to fix issue a blank space but need use postion: "relative" on View css and postion: "absolute" 
+            {/* Delete "exitBeforeEnter" to fix issue with a blank space but need use postion: "relative" on View css and postion: "absolute" 
             on all other component but causes issues with some layont in this project, so for now i don't use this */}
             <AnimatePresence exitBeforeEnter >         
                 <Switch location={location} key={location.pathname}>
                     {/* Navbar */}
-                    <Route exact path='/' component={() => (
+                    <Route exact path='/' render={() => (
                         <Home data={dataHome} pageVariants={pageVariants} pageTransition={pageTransition} />
                         )}/>
                     <Route exact path='/service' render={(props) => (
