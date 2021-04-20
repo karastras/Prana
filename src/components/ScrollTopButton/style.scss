@@ -1,0 +1,40 @@
+.scroll-to-top{
+    position: fixed;
+    bottom: 20px;
+    left: 3%;
+    text-align: center;
+    &-text{
+        color: white;
+        font-size: 0.8rem;
+        font-weight: bold;
+        z-index: 14;
+    }    
+}
+.react-icons{
+    color: white;
+    padding: -1px;
+    font-size: 3rem;
+    border: rgb(97, 100, 94) solid 5px;
+    border-radius: 50%;
+    transition: transform 0.5s;
+    z-index: 15;
+    margin-bottom: -13px;
+    &:hover{
+        transform: rotate(1080deg) scale(1.5);
+        transition: 1;
+    }
+}
+
+// Media Queries
+
+@media(max-width:480px){
+    .scroll-to-top{
+        bottom: 0px;
+        &-text{
+            font-size: .5rem;
+        }
+    }
+    .react-icons{
+    font-size: 2rem;
+    }
+}
