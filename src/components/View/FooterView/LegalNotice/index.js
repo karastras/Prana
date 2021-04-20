@@ -28,7 +28,7 @@ const LegalNotice = ({pageVariants, pageTransition}) => {
                 <h3 className="legal-title">Hello 👋</h3>
                 <div className="legal-content">
                     <p className="legal-text" >
-                        Avant tout merci d'avoir passé de votre temps à découvrir le site 🙏 et notamment cette page qui n'est en général pas des plus intéressante à consulter. 😬 <br/>
+                        Merci d'avoir passé de votre temps à découvrir le site 🙏 et notamment cette page qui n'est en général pas des plus intéressante à consulter. 😬 <br/>
                         Je vais faire au mieux pour rendre ce moment le plus agréable possible. <br/>
                     </p>
                     <p className="legal-text">
