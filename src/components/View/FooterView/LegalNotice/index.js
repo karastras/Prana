@@ -29,7 +29,7 @@ const LegalNotice = ({pageVariants, pageTransition}) => {
                 <div className="legal-content">
                     <p className="legal-text" >
                         Merci d'avoir passé de votre temps à découvrir le site 🙏 et notamment cette page qui n'est en général pas des plus intéressante à consulter. 😬 <br/>
-                        Je vais faire au mieux pour rendre ce moment le plus agréable possible. <br/>
+                        Je vais faire au mieux pour rendre ce moment le plus agréable possible.
                     </p>
                     <p className="legal-text">
                         Avant tout, les raisons de l'existence de ce site 🤔:
@@ -42,7 +42,7 @@ const LegalNotice = ({pageVariants, pageTransition}) => {
                         la nouvelle version serait le point de départ d'ajouts de nouvelles fonctionnalités pour la suite. 🚀 <br/>
                         Mais, par intérêt envers des services plus complets et plus adaptés à son activité (logicel de paie, logiciel de caisse, site internet,...), le projet a été annulé deux jours avant la date de livraison et
                         n’a donc plus eu aucune utilité ou raison d’être. Avec un accord écrit de sa part j'ai pu conserver et utiliser le travail effectué à des fins professionnelles 
-                        pour enrichir mon portefolio et pouvoir montrer mon savoir-faire sur un projet concret. 👨‍💻<br/>
+                        pour enrichir mon portefolio et pouvoir montrer mon savoir-faire sur un projet concret. 👨‍💻
                     </p>
                     <p className="legal-text">
                         Vous trouverez dans le carrousel ci-dessous les captures d'écran de l'ancien site en question qui m'ont servi de maquette pour mon travail.
@@ -150,7 +150,7 @@ const LegalNotice = ({pageVariants, pageTransition}) => {
                     de Mr Burrus Jérôme 8, rue des Récollets 68250 Rouffach-France et exclut tous droits d'utilisation ou de reproduction sans son accord.
                 </p>
                 <p className="legal-text">
-                    Pour toutes demandes, suggestions,... vous pouvez adresser directement un mail à <a href="mailto:burrusjerome@gmail.com">burrusjerome@gmail.com</a> . <br/>
+                    Pour toutes demandes, suggestions,... vous pouvez adresser directement un mail à <a href="mailto:burrusjerome@gmail.com">burrusjerome@gmail.com</a> .
                 </p>
                 <p className="legal-text">
                     Merci à vous d'avoir été jusque là 👏
