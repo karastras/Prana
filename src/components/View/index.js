@@ -4,7 +4,6 @@ import { Route, Switch, useLocation } from 'react-router-dom';
 // Page transitions
 import { AnimatePresence } from "framer-motion";
 
-
 // import for navbar 
 import Service from './Service';
 import Home from './Home';
@@ -73,6 +72,7 @@ const View = () => {
             on all other component but causes issues with some layont in this project, so for now i don't use this */}
             <AnimatePresence exitBeforeEnter >         
                 <Switch location={location} key={location.pathname}>
+
                     {/* Navbar */}
                     <Route exact path='/' render={() => (
                         <Home data={dataHome} pageVariants={pageVariants} pageTransition={pageTransition} />
@@ -127,6 +127,7 @@ const View = () => {
                     <Route exact path='/sitemap' render={() => (
                         <Sitemap pageVariants={pageVariants} pageTransition={pageTransition} />
                     )}/>
+                    
 
                     {/* Error404 */}
                     <Route render={() => (

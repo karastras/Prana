@@ -4,18 +4,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     &-title{
         text-align: center;
-    }
-        
+    }        
     &-content{
         height: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;        
-    }
-    
+    }    
     &-link{
         &:hover{
         text-decoration: none;
@@ -24,18 +21,15 @@
     &-body{
         background-color: #FADEB1;
     }
-
     &-card{
         width: 20rem;
         height: 27rem;
         box-shadow: black 0.5em 0.5em 0.5em;
-        margin: 1.5rem 1rem;
-        
+        margin: 1.5rem 1rem;        
     }
     &-img{
         width: auto;
-        height: 240px;
-        
+        height: 240px;        
     }
     &-body{
         display: flex;
@@ -45,9 +39,7 @@
     &-title, &-titles, &-text{
         color: black;
         font-family: 'Truculenta', sans-serif;
-
     }
-
     &-button{
         position: absolute;
         top: 145px;
@@ -71,7 +63,6 @@
 @media(max-width:480px){
     .service{        
         margin: 2rem 0;
-
         &-title{
             font-size: 1.2rem;
         }

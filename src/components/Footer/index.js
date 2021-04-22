@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 import './style.scss';
 
@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="footer">
             <ul className='footer-list'>
                 <li>
-                    <NavLink to="/contact-us" className='footer-content'>
-                        Contactez nous
-                    </NavLink>
+                    <Link to="/find-us" className='footer-content'>
+                        Contact
+                    </Link>
                 </li>
                 <li>
                     <NavLink to="/legal-notice" className='footer-content'>

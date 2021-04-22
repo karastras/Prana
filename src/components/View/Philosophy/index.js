@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import PropTypes from 'prop-types';
 
 import { motion } from "framer-motion";
 import './style.scss';
@@ -42,6 +43,36 @@ const Philosophy = ({pageVariants, pageTransition}) => {
 
         </motion.div>
     );
+};
+
+Philosophy.propTypes = {
+    pageVariants : PropTypes.shape({
+        initial: PropTypes.shape({
+            opacity: PropTypes.number.isRequired,
+            x: PropTypes.oneOfType([
+                PropTypes.string,
+                PropTypes.number,
+              ]).isRequired,
+        }).isRequired,
+        in: PropTypes.shape({
+            opacity: PropTypes.number.isRequired,
+            x: PropTypes.oneOfType([
+                PropTypes.string,
+                PropTypes.number,
+              ]).isRequired,
+        }).isRequired,
+        out: PropTypes.shape({
+            opacity: PropTypes.number.isRequired,
+            x: PropTypes.oneOfType([
+                PropTypes.string,
+                PropTypes.number,
+              ]).isRequired,
+        }).isRequired,
+    }).isRequired,
+    pageTransition :PropTypes.shape({        
+            duration: PropTypes.number.isRequired,
+            transition: PropTypes.string.isRequired,        
+    }).isRequired,
 };
 
 export default Philosophy;

@@ -38,7 +38,7 @@
                 min-height: 100vh;
                 position: fixed;
                 top: 0;
-                right: 0px;
+                right: -1px;
                 width: 60%;
                 transition: transform 0.3s ease-in-out;
                 z-index: 19;
@@ -50,7 +50,6 @@
                 transform: translateX(100%);              
             }  
         }
-
         &-links{
             margin: 0;                
         }        

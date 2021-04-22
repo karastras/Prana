@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
@@ -63,6 +64,36 @@ const FindUs = ({ pageVariants, pageTransition }) => {
             </div>                        
         </motion.div>
     );
+};
+
+FindUs.propTypes = {
+    pageVariants : PropTypes.shape({
+        initial: PropTypes.shape({
+            opacity: PropTypes.number.isRequired,
+            x: PropTypes.oneOfType([
+                PropTypes.string,
+                PropTypes.number,
+              ]).isRequired,
+        }).isRequired,
+        in: PropTypes.shape({
+            opacity: PropTypes.number.isRequired,
+            x: PropTypes.oneOfType([
+                PropTypes.string,
+                PropTypes.number,
+              ]).isRequired,
+        }).isRequired,
+        out: PropTypes.shape({
+            opacity: PropTypes.number.isRequired,
+            x: PropTypes.oneOfType([
+                PropTypes.string,
+                PropTypes.number,
+              ]).isRequired,
+        }).isRequired,
+    }).isRequired,
+    pageTransition :PropTypes.shape({        
+            duration: PropTypes.number.isRequired,
+            transition: PropTypes.string.isRequired,        
+    }).isRequired,
 };
 
 export default FindUs;

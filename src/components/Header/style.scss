@@ -1,8 +1,6 @@
 .header{
-    margin: 1rem 3rem;
-    
-    // titles = title + tilte2
-    
+    margin: 1rem 3rem;    
+    // titles = title + tilte2    
     &-titles{
         display: flex;
         align-items: flex-end;
@@ -39,10 +37,8 @@
             text-decoration: none;
             text-shadow: white 0.05em 0.05em 0.05em;
         }
-    } 
-    
-    // content = slogan + nav
-    
+    }    
+    // content = slogan + nav    
     &-content{      
         display: flex;
         flex-wrap: wrap;
@@ -61,10 +57,8 @@
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;        
-    }
-    
-    //////////////////////// burger button///////////////////////////
-    
+    }    
+    //////////////////////// burger button///////////////////////////    
     &-button{
         height: 4rem;
         width: 5rem;
@@ -111,18 +105,14 @@
     }   
     //animation on titles
     @keyframes slidein {
-        0% { 
-            margin-left: -700px;
-        opacity: 0;}
-        40% { 
-            margin-left: -700px;
+        0% { margin-left: -700px;
+            opacity: 0;}
+        40% { margin-left: -700px;
             opacity: 0; }
         65% { opacity: 0; }
         100% { margin-left: 0px; }
     }
 }
-
-
 // for the fun 
 
 // @media (prefers-reduced-motion: no-preference) {

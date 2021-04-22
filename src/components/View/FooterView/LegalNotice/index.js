@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet-async';
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -161,6 +162,36 @@ const LegalNotice = ({pageVariants, pageTransition}) => {
             </div>
         </motion.div>
     );
+};
+
+LegalNotice.propTypes = {
+    pageVariants : PropTypes.shape({
+        initial: PropTypes.shape({
+            opacity: PropTypes.number.isRequired,
+            x: PropTypes.oneOfType([
+                PropTypes.string,
+                PropTypes.number,
+              ]).isRequired,
+        }).isRequired,
+        in: PropTypes.shape({
+            opacity: PropTypes.number.isRequired,
+            x: PropTypes.oneOfType([
+                PropTypes.string,
+                PropTypes.number,
+              ]).isRequired,
+        }).isRequired,
+        out: PropTypes.shape({
+            opacity: PropTypes.number.isRequired,
+            x: PropTypes.oneOfType([
+                PropTypes.string,
+                PropTypes.number,
+              ]).isRequired,
+        }).isRequired,
+    }).isRequired,
+    pageTransition :PropTypes.shape({        
+            duration: PropTypes.number.isRequired,
+            transition: PropTypes.string.isRequired,        
+    }).isRequired,
 };
 
 export default LegalNotice;

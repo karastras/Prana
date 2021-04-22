@@ -49,7 +49,34 @@ Home.propTypes = {
             url: PropTypes.string.isRequired,
             alt: PropTypes.string.isRequired
         }),
-    ).isRequired,
+    ).isRequired,    
+    pageVariants : PropTypes.shape({
+        initial: PropTypes.shape({
+            opacity: PropTypes.number.isRequired,
+            x: PropTypes.oneOfType([
+                PropTypes.string,
+                PropTypes.number,
+              ]).isRequired,
+        }).isRequired,
+        in: PropTypes.shape({
+            opacity: PropTypes.number.isRequired,
+            x: PropTypes.oneOfType([
+                PropTypes.string,
+                PropTypes.number,
+              ]).isRequired,
+        }).isRequired,
+        out: PropTypes.shape({
+            opacity: PropTypes.number.isRequired,
+            x: PropTypes.oneOfType([
+                PropTypes.string,
+                PropTypes.number,
+              ]).isRequired,
+        }).isRequired,
+    }).isRequired,
+    pageTransition :PropTypes.shape({        
+            duration: PropTypes.number.isRequired,
+            transition: PropTypes.string.isRequired,        
+    }).isRequired,
 };
 
 export default Home;

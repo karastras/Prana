@@ -1,6 +1,5 @@
 .app{
     background: url(https://nsm09.casimages.com/img/2021/03/25//21032510374517254117333870.jpg);
-    
     &-main{
         min-height: 100vh;
         background-color: rgba($color: burlywood, $alpha: 0.9);
@@ -10,12 +9,8 @@
         margin: 0 10%;
     }
     // burger open = stop scrolled background
-    &--open{
-        position: fixed;
-    }
+    
 }
-
-
 
 // Media Queries
 @media(max-width:976px){
