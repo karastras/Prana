@@ -146,7 +146,7 @@ const LegalNotice = ({pageVariants, pageTransition}) => {
                 <p className="legal-text">
                     Toutes les photos, images (hormis les plaquettes de tarifs) proviennent de banques d’images gratuites comme <a target='_blank' rel='noreferrer' href="https://pixabay.com/fr/">Pixabay</a>*, elles ne sont pas représentatives
                     de la réalité des produits et de l'institut. Les offres présentes dans la section "<Link className="legal-link" to="/offers" >Offres</Link>" ne sont là qu’à titre d’exemple.<br/>                    
-                    Le site a été entièrement développé sous <a target='_blank' rel='noreferrer' href="https://fr.reactjs.org/">REACT</a> v.17 en partant du <a target='_blank' rel='noreferrer' href="https://create-react-app.dev/docs/getting-started/">create-react-app</a>. Seul Bootstrap a été utilisé pour le "Carousel" et certaines "Cards". <br/>
+                    Le site a été entièrement développé sous <a target='_blank' rel='noreferrer' href="https://fr.reactjs.org/">REACT</a>* v.17 en partant du <a target='_blank' rel='noreferrer' href="https://create-react-app.dev/docs/getting-started/">create-react-app</a>*. Seul Bootstrap a été utilisé pour le "Carousel" et certaines "Cards". <br/>
                     Il respecte au mieux les normes établies par <a target='_blank' rel='noreferrer' href="https://directory.opquast.com/fr/certificat/Q1OE2V/">OPQUAST</a>*, notamment l'accessibilité aux personnes en situation de handicap. Le code source de ce site est la propriété
                     de Mr Burrus Jérôme 8, rue des Récollets 68250 Rouffach-France et exclut tous droits d'utilisation ou de reproduction sans son accord.
                 </p>

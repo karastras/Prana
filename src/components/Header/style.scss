@@ -1,11 +1,10 @@
 .header{
-    margin: 1rem 3rem;    
+    margin: 0 3rem;    
     // titles = title + tilte2    
     &-titles{
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        margin-bottom: 0.7rem;
         white-space: nowrap;        
     }    
     &-title{
